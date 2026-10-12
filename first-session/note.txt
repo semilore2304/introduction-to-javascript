@@ -1,0 +1,337 @@
+8th October 2026: INTRODUCTION TO JAVASCRIPT
+
+What is JavaScript?
+JavaScript is a programming language used to give instructions to a computer.
+On a website, JavaScript can:
+- Open and close a navigation menu.
+- Check whether a user has completed a form correctly.
+- Calculate the total cost of items in a shopping cart.
+- Change text or images.
+- Show or hide content.
+- Get information from a server.
+- Respond to user actions, such as clicks, typing, and scrolling.
+- Update information without reloading the entire page, such as displaying new messages.
+
+
+// HTML, CSS, and JavaScript
+-------------------------------------------------------------------------------------------
+| Technology |         Main role       | Example                                          |
+|------------|-------------------------|--------------------------------------------------|
+| HTML       | Structures the content  | Creates a button                                 |
+| CSS        | Styles the content      | Gives the button a colour                        |
+| JavaScript | Adds behaviour          | Makes something happen when the button is clicked|
+-------------------------------------------------------------------------------------------
+
+JavaScript also runs outside the browser. For example, Node.js allows developers to use JavaScript to build servers.
+
+SCRIPT - <script>
+
+The <script> element connects the JavaScript file to the HTML page. It is placed at the bottom of the html file, just above the closing <body> tag.
+------
+
+How index.html and script.js Work Together
+
+index.html creates the webpage’s content, while script.js provides JavaScript instructions that can make the page interactive.
+
+For example:
+- HTML creates a heading and a button.
+- JavaScript changes the heading when someone clicks the button.
+
+---------------------------------
+Add this to script.js:
+console.log("Hello, JavaScript!");
+
+
+-------
+What is console.log()?
+console.log() displays information in the browser’s console. It is useful for checking results while learning or debugging.
+To see the output:
+1. Open index.html in your browser.
+2. Right-click the page and select Inspect.
+3. Open the Console tab.
+
+You should see:
+Hello, JavaScript!
+
+The message appears in the console, not on the webpage.
+
+
+----
+The console is part of the browser, but it is separate from the webpage.
+console.log() specifically tells JavaScript:
+“Write this information in the browser’s console.”
+
+console.log("Bukola");
+
+It does not tell JavaScript to add anything to the webpage.
+
+-----------------------------------------------------------------------
+| Place       | Purpose                                               |
+|-------------|-------------------------------------------------------|
+| **Webpage** | Displays content for website users                    |
+| **Console** | Helps developers check results and investigate errors |
+-----------------------------------------------------------------------
+
+How to display the name on the webpage
+
+In index.html, create a paragraph:
+<p id="name"></p>
+
+<script src="./script.js"></script>
+
+In script.js, put your name into that paragraph:
+document.getElementById("name").textContent = "Bukola";
+
+This means:
+“Find the element whose ID is name and set its text to Bukola.”
+
+Now Bukola appears on the webpage.
+For your first lessons, console.log() lets You practise JavaScript and check your results before learning how to change webpage content.
+
+For now, we will use console.log() to display results in the browser’s console. We will learn how to use JavaScript to display names and other content directly on the webpage much later in the course.
+
+-------
+Comments
+Comments explain code. JavaScript does not execute them.
+
+// This is a single-line comment.
+
+/*
+This is a comment
+that covers several lines.
+*/
+
+
+// DATA TYPES IN DETAILS:
+// STRING
+// STRING PROPERTIES AND METHODS:
+
+// Property versus method
+// 1. PROPERTY
+// A property gives information about a value.
+
+// The .length property
+// .length gives the length of a string. For ordinary English text, you can think of it as counting characters, including spaces and punctuation.
+// EXAMPLE:
+let word = "Hello";
+console.log(word.length);
+
+const message = "Read a Book";
+console.log(message.length);
+
+
+// Accessing characters
+// String indexes also start at 0.
+console.log(word[0]);
+
+
+// -----------
+// 2. METHOD:
+// A method performs an action.
+
+// STRING METHODS
+// // They are used to manipulate strings. A string method is an action you can perform on a string, such as changing its case, removing spaces, or extracting text.
+
+// How to write a string method
+// string.methodName()
+// NOTE: Every string method has to end with a bracket.
+
+
+// // METHOD 
+// 1. toUpperCase()
+// Converts the letters in a string to uppercase.
+
+let space = "Tech hub";
+console.log(space.toUpperCase());
+
+
+// 2. toLowerCase()
+// Converts the letters in a string to lowercase.
+let goal = "TO BE A DEVELOPER";
+console.log(goal.toLowerCase());
+
+
+// 3. slice() - Extracts part of a string.
+// Syntax
+// string.slice(startIndex, endIndex)
+
+// Note: index number starts from 0
+// It includes the starting index but stops before the ending index.
+
+let song = "Terminator";
+console.log(song.slice(0, 5));
+// slice(0, 5) extracts indexes 0, 1, 2, and 4.
+
+// A negative starting index counts backwards from the end:
+console.log(song.slice(-6));
+
+// 4. indexOf()
+// Returns the index where the first occurrence of some text begins.
+// Remember: indexes start at 0.
+let newWord = "Process";
+console.log(newWord.indexOf("o"));
+
+// If the text is not found, it returns -1.
+console.log(newWord.indexOf("a"));
+
+// It can also search for a whole word:
+let sent = "Just do it";
+console.log(sent.indexOf("o"));
+
+// 5. lastIndexOf()
+// lastIndexOf() returns the index where the last occurrence of a character or piece of text begins.
+// Remember: indexes start at 0.
+console.log(sent.lastIndexOf("t"));
+
+
+// 6. trim()
+// Removes whitespace, such as spaces, from both ends of a string.
+// EXAMPLE:
+let town = "    Abeokuta    ";
+console.log(town.trim());
+
+// ---------
+// 12th Ocotber 2026
+
+// 7. includes()
+// Checks whether a string contains a particular text and returns a boolean value.
+const brand = "Nike";
+console.log(brand.includes("i"));
+
+// We can also specify the index value from which to start a search: 
+const fruit = "mango";
+console.log(fruit.includes("n", 1));
+
+// 8. replace()
+// Takes out value to be replaced and replaces it with another.
+const statement = "Hello World!";
+console.log(statement.replace("World", "Dear"));
+
+// 9. replaceAll()
+// Replaces every occurrence of matching text.
+const sentence = "Tola, your namesake Tola is here."
+console.log(sentence.replaceAll("Tola", "Fawaz"));
+
+// 10. repeat()
+// Helps us to repeat a value
+const rating = "*";
+console.log(rating.repeat(5));
+
+// 11. split()
+// To divide/section values.
+const fruits = "apple";
+console.log(fruits.split(""));
+
+// 12. startsWith() and endsWith()
+// StartsWith(): Checks whether a string begins with particular text.
+// EndsWith(): Checks whether a string ends with particular text.
+// Both returns a boolean result.
+const word1 = "brain drain";
+console.log(word1.startsWith("brain"));
+console.log(word1.endsWith("drain"));
+
+// 13. padStart() and padEnd()
+// padStart() adds padding at the beginning until the string reaches a specified total length.
+// Syntax:
+// string.padStart(targetLength, paddingText)
+
+// 14. padEnd() works like padStart(), but adds padding at the end.
+// string.padEnd(targetLength, paddingText)
+const word2 = "chocolate";
+console.log(word2.padStart(16, "brownie"));
+console.log(word2.padEnd(25, "yummy"));
+
+// 15. charAt()
+// charAt() — Get a Character
+// charAt() returns the character at a specified index.
+// Indexes start at 0, and spaces count.
+const msgg = "Tell me more";
+console.log(msgg.charAt(9)); //deals with the index to get to the character.
+console.log(msgg.indexOf("o")); // deals with the character to get to the index.
+
+// 17. substring() — Extract Part of a String
+// substring() extracts text between two indexes.
+// string.substring(startIndex, endIndex)
+const real = "rule your world";
+console.log(real.substring(5, 12));
+
+// 18. concat() — Join Strings
+// concat() joins strings together.
+const firstWord = "Tech";
+const secondWord = "Studio";
+console.log(firstWord.concat(" ", secondWord));
+// It does not automatically add spaces. We have included a space as another argument.
+
+
+// QUICK REVIEW OF ALL THE STRING METHODS COVERED
+// | Method           | Purpose                                               |
+// |------------------|-------------------------------------------------------|
+// | `toUpperCase()`  | Converts text to uppercase                            |
+// | `toLowerCase()`  | Converts text to lowercase                            |
+// | `trim()`         | Removes whitespace from both ends                     |
+// | `trimStart()`    | Removes whitespace from the beginning                 |
+// | `trimEnd()`      | Removes whitespace from the end                       |
+// | `includes()`     | Checks whether particular text is present             |
+// | `indexOf()`      | Finds the starting index of the first match           |
+// | `lastIndexOf()`  | Finds the starting index of the last match            |
+// | `charAt()`       | Gets the character at a specified index               |
+// | `slice()`        | Extracts text, excluding the ending index             |
+// | `substring()`    | Extracts text, excluding the ending index             |
+// | `replace()`      | Replaces the first match when searching with a string |
+// | `replaceAll()`   | Replaces every match                                  |
+// | `startsWith()`   | Checks whether a string begins with particular text   |
+// | `endsWith()`     | Checks whether a string ends with particular text     |
+// | `split()`        | Splits a string into an array                         |
+// | `repeat()`       | Repeats a string a specified number of times          |
+// | `padStart()`     | Adds padding at the beginning to reach a target total length |
+// | `padEnd()`       | Adds padding at the end to reach a target total length |
+// | `concat()`       | Joins strings together                                 |
+// -------------------------------------------------------------------------------
+
+
+// | Method             | Example |
+// |--------------------|------------------------------------------|
+// | `toUpperCase()`    | `"Hello".toUpperCase()`                  |
+// | `toLowerCase()`    | `"Hello".toLowerCase()`                  |
+// | `trim()`           | `" Hi ".trim()`                          |
+// | `trimStart()`      | `" Hi ".trimStart()`                     |
+// | `trimEnd()`        | `" Hi ".trimEnd()`                       |
+// | `includes()`       | `"Hello".includes("ell")`                |
+// | `indexOf()`        | `"banana".indexOf("a")`                  |
+// | `lastIndexOf()`    | `"banana".lastIndexOf("a")`              |
+// | `charAt()`         | `"Hello".charAt(1)`                      |
+// | `slice()`          | `"JavaScript".slice(0, 4)`               |
+// | `substring()`      | `"JavaScript".substring(4, 10)`          |
+// | `replace()`        | `"Hi Ada Ada".replace("Ada", "Tola")`    |
+// | `replaceAll()`     | `"Hi Ada Ada".replaceAll("Ada", "Tola")` |
+// | `startsWith()`     | `"JavaScript".startsWith("Java")`        |
+// | `endsWith()`       | `"index.html".endsWith(".html")`         |
+// | `split()`          | `"HTML CSS".split(" ")`                  |
+// | `repeat()`         | `"Hi".repeat(3)`                         |
+// | `padStart()`       | `"7".padStart(3, "0")`                   |
+// | `padEnd()`         | `"Hi".padEnd(5, "*")`                    |
+// | `concat()`         | `"Tech".concat(" ", "Studio")`           |
+
+
+// | Example                                   | Result               |
+// |-------------------------------------------|----------------------|
+// | `"Hello".toUpperCase()`                   | `"HELLO"`            |
+// | `"Hello".toLowerCase()`                   | `"hello"`            |
+// | `" Hi ".trim()`                           | `"Hi"`               |
+// | `" Hi ".trimStart()`                      | `"Hi "`              |
+// | `" Hi ".trimEnd()`                        | `" Hi"`              |
+// | `"Hello".includes("ell")`                 | `true`               |
+// | `"banana".indexOf("a")`                   | `1`                  |
+// | `"banana".lastIndexOf("a")`               | `5`                  |
+// | `"Hello".charAt(1)`                       | `"e"`                |
+// | `"JavaScript".slice(0, 4)`                | `"Java"`             |
+// | `"JavaScript".substring(4, 10)`           | `"Script"`           |
+// | `"Hi Ada Ada".replace("Ada", "Tola")`     | `"Hi Tola Ada"`      |
+// | `"Hi Ada Ada".replaceAll("Ada", "Tola")`  | `"Hi Tola Tola"`     |
+// | `"JavaScript".startsWith("Java")`         | `true`               |
+// | `"index.html".endsWith(".html")`          | `true`               |
+// | `"HTML CSS".split(" ")`                   | `["HTML", "CSS"]`    |
+// | `"Hi".repeat(3)`                          | `"HiHiHi"`           |
+// | `"7".padStart(3, "0")`                    | `"007"`              |
+// | `"Hi".padEnd(5, "*")`                     | `"Hi***"`            |
+// | `"Tech".concat(" ", "Studio")`            | `"Tech Studio"`      |
