@@ -18,7 +18,7 @@ On a website, JavaScript can:
 | Technology |         Main role       | Example                                          |
 |------------|-------------------------|--------------------------------------------------|
 | HTML       | Structures the content  | Creates a button                                 |
-| CSS        | Styles the content      | Gives the button a colour                        |
+| CSS        | Styles the content      | Gives the button a color                        |
 | JavaScript | Adds behaviour          | Makes something happen when the button is clicked|
 -------------------------------------------------------------------------------------------
 
@@ -86,7 +86,7 @@ This means:
 “Find the element whose ID is name and set its text to Bukola.”
 
 Now Bukola appears on the webpage.
-For your first lessons, console.log() lets You practise JavaScript and check your results before learning how to change webpage content.
+For your first lessons, console.log() lets You practice JavaScript and check your results before learning how to change webpage content.
 
 For now, we will use console.log() to display results in the browser’s console. We will learn how to use JavaScript to display names and other content directly on the webpage much later in the course.
 
@@ -191,7 +191,7 @@ let town = "    Abeokuta    ";
 console.log(town.trim());
 
 // ---------
-// 12th Ocotber 2026
+// 12th October 2026
 
 // 7. includes()
 // Checks whether a string contains a particular text and returns a boolean value.

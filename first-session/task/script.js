@@ -30,4 +30,24 @@ const result= firstMotto.concat(' ',secondMotto)
 console.log(result.charAt(0));
 console.log(result.repeat(2));
 
+const fone='Good'
+const ftwo='morning'
+const greeting= fone + ' ' + ftwo
+console.log(greeting);
 
+const fname='Chidi';
+const greet='welcome';
+const visitorName= greet + ' ' +fname
+console.log(visitorName)
+;
+   
+   const customerName = "Zainab";
+   const ticketCount = 3;
+   const eventName = "Music Night"
+//    Zainab booked 3 tickets for Music Night.
+    const bookMessage= customerName + ' booked ' + ticketCount + ' tickets for ' + eventName + '.'
+    console.log(bookMessage);
+
+    console.log(customerName.concat(" booked ", ticketCount, " tickets for ", eventName, '.' ));
+    
+    
