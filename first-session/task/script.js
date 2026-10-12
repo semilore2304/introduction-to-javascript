@@ -34,8 +34,8 @@ console.log(result.trimStart());
 
 // 2nd class task
 
-const fone='Good'
-const ftwo='morning'
+const fOne='Good'
+const fTwo='morning'
 const greeting= fone + ' ' + ftwo
 console.log(greeting);
 
@@ -45,13 +45,13 @@ const visitorName= greet + ' ' +fname
 console.log(visitorName)
 ;
    
-   const customerName = "Zainab";
-   const ticketCount = 3;
-   const eventName = "Music Night"
+const customerName = "Zainab";
+const ticketCount = 3;
+const eventName = "Music Night"
 //    Zainab booked 3 tickets for Music Night.
-    const bookMessage= customerName + ' booked ' + ticketCount + ' tickets for ' + eventName + '.'
-    console.log(bookMessage);
+const bookMessage= customerName + ' booked ' + ticketCount + ' tickets for ' + eventName + '.'
+console.log(bookMessage);
 
-    console.log(customerName.concat(" booked ", ticketCount, " tickets for ", eventName, '.' ));
+console.log(customerName.concat(" booked ", ticketCount, " tickets for ", eventName, '.' ));
     
     
