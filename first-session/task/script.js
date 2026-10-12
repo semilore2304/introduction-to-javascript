@@ -69,7 +69,7 @@ const price=6000;
 const quantity=200;
 
 // the current price of is naira per packs and we have about packs that can be supplied by Dami
-console.log(`The current price of ${productName} is ${price} naira per pack and we have about ${quantity} packs that can be supplied by Micheal within the next 24 hours, so the total is ${price * quantity}.`);
+console.log(`The current price of ${productName} is ${price} naira per pack and we have about ${quantity} packs that can be supplied by Micheal within the next 24 hours, so the total is ${price * quantity} naira.`);
 
 
 // Welcome to Ivory Fine Dining, where every one of our 20 meals tells a story. Savor the passion in every bite and the warmth of good company. Sit back, relax, and let us make your dining experience unforgettable.
