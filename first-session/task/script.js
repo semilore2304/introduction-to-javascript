@@ -36,12 +36,12 @@ console.log(result.trimStart());
 
 const fOne='Good'
 const fTwo='morning'
-const greeting= fone + ' ' + ftwo
+const greeting= fOne + ' ' + fTwo
 console.log(greeting);
 
-const fname='Chidi';
+const fName='Chidi';
 const greet='welcome';
-const visitorName= greet + ' ' +fname
+const visitorName= greet + ' ' +fName
 console.log(visitorName)
 ;
    
@@ -52,7 +52,29 @@ const eventName = "Music Night"
 const bookMessage= customerName + ' booked ' + ticketCount + ' tickets for ' + eventName + '.'
 console.log(bookMessage);
 
-const secondMessage= 'customerName.concat(" booked ", ticketCount, " tickets for ", eventName, '.' )';
+const secondMessage= customerName.concat(" booked ", ticketCount, " tickets for ", eventName, '.')
 console.log(secondMessage);
-    
-    
+
+// 3rd task
+const oruko='Micheal'
+const age= 40;
+const course='Economics'
+// hi i go by the name micheal currently at the age of 40 studied economics
+
+const intro1=`Hi i go by the name ${oruko}, currently at the age of ${age}, studied ${course} at OOU`
+console.log(intro1);
+
+const productName='Table Bottle';
+const price=6000;
+const quantity=200;
+
+// the current price of is naira per packs and we have about packs that can be supplied by Dami
+console.log(`The current price of ${productName} is ${price} naira per pack and we have about ${quantity} packs that can be supplied by Micheal within the next 24 hours.`);
+
+
+// Welcome to Ivory Fine Dining, where every one of our 20 meals tells a story. Savor the passion in every bite and the warmth of good company. Sit back, relax, and let us make your dining experience unforgettable.
+const restName='Ivory Fine Dining';
+const type= 20;
+console.log(`Welcome to ${restName}, where every one of our ${type} meals tells a different story.Savor the passion in every bite and the warmth of good company.`);
+
+
