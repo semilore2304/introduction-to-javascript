@@ -1,3 +1,4 @@
+// FIRST TASK
 const guestName=' Amina Yusuf ';
 console.log(guestName);
 
@@ -43,6 +44,8 @@ console.log(ticketQuantity);
 const thrill='See you there! '
 console.log(thrill.repeat(3));
 
+
+// SECOND TASK
 // Message: 
 // Welcome, Amina Yusuf! Your booking for Creative Meetup on 24 October 2026 at Lagos Community Hall has been received. We look forward to seeing you!
 
@@ -53,9 +56,10 @@ console.log(bookingMessage);
 const secondMessage='welcome, '.concat(cleanName, '! ', 'Your booking for ', eventName, ' on ', eventDate, ' at ', venue, ' has been received. ', 'We look forward to seeing you!' )
 console.log(secondMessage);
 
-
+// THIRD TASK
 const sentence=`${cleanName} booked ${ticketQuantity} tickets for ${eventName} on ${eventDate} at ${venue}. The booking ID is ${bookingDid}, and the total cost is ₦${ticketPrice * ticketQuantity}.`
 console.log(sentence);
 
+// FOURTH TASK
 console.log(eventName.replace('Creative', 'Community'));
 
