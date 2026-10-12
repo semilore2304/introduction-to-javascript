@@ -52,7 +52,7 @@ const eventName = "Music Night"
 const bookMessage= customerName + ' booked ' + ticketCount + ' tickets for ' + eventName + '.'
 console.log(bookMessage);
 
-const secondMessage= 'customerName.concat(" booked ", ticketCount, " tickets for ", eventName, '.' )';
+const secondMessage= customerName.concat(" booked ", ticketCount, " tickets for ", eventName, '.' )
 console.log(secondMessage);
     
     
