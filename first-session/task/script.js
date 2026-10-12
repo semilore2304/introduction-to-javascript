@@ -21,14 +21,18 @@ console.log(sum.padStart(4, '0'));
 const num='42';
 console.log(num.padEnd(4, '*'));
 
-let firstMotto='Happy';
+let firstMotto=' Happy';
 let secondMotto='Learning';
 console.log(firstMotto.concat(' ',secondMotto));
+
 
 
 const result= firstMotto.concat(' ',secondMotto)
 console.log(result.charAt(0));
 console.log(result.repeat(2));
+console.log(result.trimStart());
+
+// 2nd class task
 
 const fone='Good'
 const ftwo='morning'
