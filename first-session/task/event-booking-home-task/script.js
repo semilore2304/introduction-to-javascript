@@ -1,3 +1,4 @@
+// FIRST SESSION EVENT-BOOKING-HOME-TASK
 // FIRST TASK
 const guestName=' Amina Yusuf ';
 console.log(guestName);
@@ -31,8 +32,8 @@ console.log(activities.split(','));
 const bookingId = '83';
 console.log(bookingId);
 
-const bookingDid=bookingId.padStart(4, '00')
-console.log(bookingDid);
+const formattedBookingId=bookingId.padStart(4, '00')
+console.logformattedBookingId);
 console.log(bookingId.padEnd(5, '***'));
 
 const ticketPrice=2500;
@@ -57,7 +58,7 @@ const secondMessage='welcome, '.concat(cleanName, '! ', 'Your booking for ', eve
 console.log(secondMessage);
 
 // THIRD TASK
-const sentence=`${cleanName} booked ${ticketQuantity} tickets for ${eventName} on ${eventDate} at ${venue}. The booking ID is ${bookingDid}, and the total cost is ₦${ticketPrice * ticketQuantity}.`
+const sentence=`${cleanName} booked ${ticketQuantity} tickets for ${eventName} on ${eventDate} at ${venue}. The booking ID is ${formattedBookingId}, and the total cost is ₦${ticketPrice * ticketQuantity}.`
 console.log(sentence);
 
 // FOURTH TASK
