@@ -215,3 +215,246 @@ console.log(wordd * valSix);
 //  Booleans in arithmetic
 // C. During numeric conversion, true becomes 1 and false becomes 0.
 console.log(true + 3);
+
+// // =====COMPARISON OPERATORS========== 
+// // Every single comparison operator returns a BOOLEAN. it is used to compare two items basically
+// // there are types of comparison operators
+
+// // types of comparison operators
+// // 1. GREATER THAN (>) eg. (x > y):  : compares two variables or values and returns a boolean
+// // 2. LESS THAN (<) eg. (x < y) : compares two variables or values and returns a boolean
+// // 3. GREATER THAN OR EQUALS TO (>=) eg. (x >= y) : compares two variables or values and returns a boolean
+// // 4. LESS THAN OR EQUALS TO (<=) eg. (x <= y) : compares two variables or values and returns a boolean
+// // 5. STRICTLY EQUALS TO (===) eg. (x === y): This checks for both an equality in data type as well as the value "10" === 10
+// // 6. LOOSELY EQUALS TO (==) eg. (x == y): This checks for just an equality in just the value
+// // 7. NOT EQUAL (!=) eg. (x != y):  to check if two variables are not equal, it returns a boolean
+// // 8. Strict not equal (!==) "10" !== 10 
+
+// 1. GREATER THAN (>)
+// EXAMPLE:
+const great = 234;
+const gre = 455;
+console.log(great > gre);
+
+// 2. LESS THAN (<)
+// EXAMPLE:
+console.log(great < gre);
+
+// 3. GREATER THAN OR EQUALS TO
+// EXAMPLE:
+console.log(gre >= great);
+
+// 4. LESS THAN OR EQUALS TO (<=) 
+// EXAMPLE:
+console.log(great <= gre);
+
+// 5. STRICTLY EQUALS TO (===)
+// EXAMPLE:
+console.log(great === gre);
+const gr = 455;
+console.log(gr === gre);
+
+// 6. LOOSELY EQUALS TO (==) 
+// EXAMPLE:
+console.log(gr == gre);
+
+// 7. LOOSELY NOT EQUAL (!=)
+console.log(great != gr);
+
+// 8. Strict not equal (!==) 
+console.log(gre !== great);
+
+
+// LOGICAL OPERATOR
+// // Logical operators are used to combine or manipulate boolean values (true or false)
+
+// // Quick overview — the three operators
+
+// // && — AND
+
+// // || — OR
+
+// // ! — NOT (negation)
+
+
+// // 1. AND — &&: Definition: A && B is true only if both A and B are true.
+
+// // Truth table (boolean form)
+
+// // true && true → true
+
+// // true && false → false
+
+// // false && true → false
+
+// // false && false → false
+
+// EXAMPLE:
+//i. true && true → true
+const a = 34;
+const b = 20;
+const c = 11;
+const d = 20;
+const t = a > b;
+const u = c < d;
+const v = t && u;
+console.log(v);
+
+const e = 34;
+const f = 65;
+const g = 74;
+const h = 65;
+console.log(f === h && e < f);
+
+// ii. true && false → false
+console.log(e < f && f !== h);
+console.log(a > b && c > d);
+
+// iii. false && true → false
+console.log(f !== h && e < f);
+console.log(c > d && a > b);
+
+// iv. false && false → false
+console.log(f != h && c > f);
+console.log(c > d && a < b);
+
+
+// || — OR
+// Definition: A || B is true if at least one of A or B is true.
+
+// Truth table (boolean form)
+// true and false
+console.log(e < f || f !== h);
+console.log(a > b || c > d);
+
+// false and true
+console.log(f !== h || e < f);
+console.log(c > d || a > b);
+
+// iv. false && false → false
+console.log(f != h || c > f);
+console.log(c > d || a < b);
+
+
+// ! — NOT (negation)
+// Definition: !A converts A to boolean (if needed) and returns its inverse.
+let fatherFigure = true;
+console.log(!fatherFigure);
+
+let fatherFig = false;
+console.log(!fatherFig);
+
+
+// // OPERATOR PRECEDENCE & GROUPING
+// // Precedence (higher first):
+// // ! (NOT)
+
+// // && (AND)
+
+// // || (OR)
+
+
+// // ======= Conditional Statements in JavaScript ====
+// // Conditional statements let you control the flow of a program by making decisions based on certain conditions. They check conditions (which are true or false) and run specific blocks of code depending on the outcome.
+
+// // Types of Conditional Statements in JavaScript
+// // if statement
+
+// // if...else statement
+
+// // else...if statement
+
+// // Ternary operator (? :) — shorthand conditional
+
+// // switch statement
+
+
+// 1. if statement: Definition: Runs a block of code only if the condition is true.
+// EXAMPLE: 
+let song3 = "Buga Won";
+if (song3 === "Buga Won") {
+    console.log("That is Kizz Daniel's track.");
+    
+}
+
+let song4 = "Day by day";
+if (song4 !== "Buga Won") {
+    console.log("Not Kizz Daniel's track.");
+    
+}
+
+// 2. if...else statement
+// // Definition: Runs one block if condition is true, another block if false.
+// // syntax
+// // if (condition) {
+// //   // runs if condition is true
+// // } else {
+// //   // runs if condition is false
+// // }
+// Syntax
+// if (condition) {
+//    code to run if the condition is true
+// }
+
+// EXAMPLE:
+// with conole.log
+let aged = 18;
+if (aged >= 18) {
+    console.log("You are an adult");
+    
+} else {
+    console.log("You are still a child");
+    
+}
+
+// with msg
+let agedd = 15;
+let msg;
+if (agedd >= 18) {
+    msg = "You are a verified adult."
+} else {
+    msg = "You are still a small child."
+}
+console.log(msg);
+
+ 
+let isRaining = true;
+if (isRaining) {
+    console.log("Take an umbrella.");
+    
+} else {
+    console.log("You don't need an umbrella.");
+    
+}
+
+
+// 3  else...if statement
+
+// Definition: Allows checking multiple conditions, one after the other.
+// syntax
+// if (condition1) {
+//   // code if condition1 is true
+// } else if (condition2) {
+//   // code if condition2 is true
+// } else {
+//   // code if none are true
+// }
+
+// EXAMPLE: 
+let score = 20;
+if (score > 40 && score <= 49) {
+    console.log("Grade D");
+    
+} else if (score >= 50 && score <= 59){
+    console.log("Grade C");
+
+} else if (score >= 60 && score <= 69){
+    console.log("Grade B");
+    
+} else if (score >= 70 && score <= 100) {
+    console.log("Gradwe A");
+    
+} else {
+    console.log("Grade F");
+    
+}
