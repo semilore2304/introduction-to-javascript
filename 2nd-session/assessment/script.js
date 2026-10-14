@@ -2,8 +2,8 @@
 
 let batteryLevel= 80;
 let msg;
-if (batteryLevel = 15) {
-    msg="Low battery please charge your device"
+if (batteryLevel < 20) {
+    msg="Low battery! please charge your device"
 }
 console.log(msg);
 
