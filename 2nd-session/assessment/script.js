@@ -1,3 +1,5 @@
+// TASK 1
+
 let batteryLevel= 80;
 let msg;
 if (batteryLevel = 15) {
@@ -7,6 +9,7 @@ console.log(msg);
 
 // it shows undefined
 
+// TASK 2
 const ticketPrice = "2500";
 const ticketCount = 3;
 let budget = 10000;
@@ -22,6 +25,8 @@ if (budget >= 7500) {
     
 }
 
+
+// TASK 3
 const measurement=7.68;
 console.log(Math.round(measurement));
 console.log(Math.floor(measurement));
@@ -33,7 +38,7 @@ const no3=16;
 console.log(Math.max(no, no2, no3));
 console.log(Math.min(no, no2, no3));
 
-
+// TASK 4
 const hasLibraryCard = true;
 const hasGuestPass = false;
 const isSuspended = false;
@@ -48,6 +53,8 @@ if (canEnter) {
     
 }
 
+
+// TASK 5
 let distance= 4;
 if (distance >=0 && distance <=5 ) {
     console.log("Delivery: ₦500");
