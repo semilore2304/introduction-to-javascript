@@ -2,8 +2,8 @@
 
 let batteryLevel= 80;
 let msg;
-if (batteryLevel = 15) {
-    msg="Low battery please charge your device"
+if (batteryLevel < 20) {
+    msg="Low battery! please charge your device"
 }
 console.log(msg);
 
@@ -14,15 +14,12 @@ const ticketPrice = "2500";
 const ticketCount = 3;
 let budget = 10000;
 
-const totalCost= budget - (ticketCount * Number(ticketPrice));
+const totalCost= (ticketCount * Number(ticketPrice));
 console.log(totalCost.toFixed(2));
-
 if (budget >= 7500) {
-    console.log("Booking affordable");
-    
+    console.log("Booking affordable");   
 } else {
-    console.log("Not enough money");
-    
+    console.log("Not enough money");  
 }
 
 
@@ -42,9 +39,8 @@ console.log(Math.min(no, no2, no3));
 const hasLibraryCard = true;
 const hasGuestPass = false;
 const isSuspended = false;
-let canEnter= hasLibraryCard || hasGuestPass && !isSuspended
+let canEnter= (hasLibraryCard || hasGuestPass) && !isSuspended;
 console.log(canEnter);
-
 if (canEnter) {
     console.log("Access granted");
     
