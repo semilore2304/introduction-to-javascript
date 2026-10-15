@@ -149,3 +149,31 @@ console.log(valfive - (valthree + valfour));
 
 console.log(true + 0);
 
+// 14th of october 2026
+
+// CLASS TASK: Create a programme that checks a parcel’s weight.
+
+// Delivery charges:
+// -----------------------------------------------
+// Weight	                   |     Charge.      |
+// -----------------------------------------------
+// Above 0 kg and up to 2 kg  |    ₦1,500        |
+// Above 2 kg and up to 5 kg  |    ₦3,000        |
+// Above 5 kg	               |    ₦5,000        |
+// -----------------------------------------------
+// Task: Use if, else if, and else to display the correct charge. Display "Invalid weight" if the weight is zero or negative.
+
+const weight=1
+if (weight <0) {
+    console.log('unknown weight');
+    
+}else if(weight < 3 ){
+    console.log('₦1,500');
+    
+}else if(weight < 6 ){
+    console.log('₦3,500');
+    
+}else {
+    console.log('₦5,000');
+    
+}

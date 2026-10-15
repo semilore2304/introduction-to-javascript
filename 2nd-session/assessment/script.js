@@ -55,7 +55,7 @@ if (canEnter) {
 
 
 // TASK 5
-let distance= 4;
+let distance= -1;
 if (distance >=0 && distance <=5 ) {
     console.log("Delivery: ₦500");
     
