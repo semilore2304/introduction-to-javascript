@@ -99,7 +99,7 @@ console.log(Number.isSafeInteger(9007199254741999)); // false (too big to track 
 //  Reads a string from left to right and pulls out a whole number. It stops reading as soon as it hits a letter or decimal point.
 // Example:
 console.log(Number.parseInt("42px")); // 42
- console.log(Number.parseInt("3.14")); // 3
+ console.log(Number.parseInt("3.145")); // 3
 
 
 //  6.Number.parseFloat()
