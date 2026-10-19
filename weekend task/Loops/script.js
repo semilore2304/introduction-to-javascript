@@ -38,6 +38,7 @@
 //     console.log(tot);
     
 // }
+//  console.log(tot);
 
 // 4. break and continue:
 //    Count from 1 to 15.
@@ -131,6 +132,13 @@
 // 10. Display a Message:
 //     Display "I am learning JavaScript!" five times.
 
+
+let i=1
+do {
+    console.log("I am learning JavaScript!");
+    i++;
+} while (i<=5);
+
 // for (let i=1; i<=5; i++){
 //     console.log("I am learning JavaScript!");
     
@@ -143,13 +151,17 @@
 //     After the loop, display "Correct word!" using alert().
 //     Assume the user does not click Cancel.
 
-// let seCode=prompt("Enter secret word")
+// let seCode;
+// do {
+//     seCode = prompt("Enter secret word");
     
-// while (seCode !== 'coding'){
-//      alert('Incorrect word')
-//      seCode=prompt("Enter secret word") 
-// }
-// alert('Correct word')
+//     if (seCode !== 'coding' && seCode !== null) {
+//         alert('Incorrect word');
+//     }
+// } while (seCode !== 'coding');
+
+// alert('Correct word');
+
     
 
 
@@ -258,6 +270,12 @@
 //     Display result in the console.
 //     Test your code with scores of 65, 40, and 50.
 
+
+let score=65;
+let result= score>=50 ?"Passed":"Failed"
+console.log(result);
+
+// OR
 
 // let score=60;
 // score >= 50 ? console.log("Passed")
