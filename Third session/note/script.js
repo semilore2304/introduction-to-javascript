@@ -177,3 +177,376 @@ for (let i = 4; i <= 13; i++) {
     
     console.log(i);
 }
+
+// =================
+// NON PRIMITIVE / COMPLEX DATA TYPES.
+// // 1. Arrays
+// // 2. objects
+
+// // What is an Array?
+
+// // An array is one of the most important things in programming.
+// // Think of an array as a box with many compartments — you can store multiple values inside one variable, instead of making separate variables for each value.
+// // Definition:
+// // An array is a list-like object used to store multiple values in one variable.
+// // Arrays are used to store multiple values or data. They can hold every data type in JavaScript including others arrays
+// // After each data in an array you put a comma ,
+// // In arrays you also start counting each data type from 0
+// //  An array is a container for holding multiple values (of any type) in a single variable.
+// // Why Use Arrays?
+// // Store a group of related data.
+
+// // Keep things organized.
+
+// // // example
+// // let student1 = "Dami"
+// // let student2 = "Seyi"
+// // let student3 = "Ope"
+// // let student4 = "Oscar"
+// // let student5 = "Tunde"
+// // let student6 = "Victory"
+// // let student7 = "Samad"
+// // let student8 = "Andy"
+// // let student9 = "Bukola"
+// // let student10 = "Deji"
+// // let student11 = "Tolu"
+// // let student12 = "Chidinma"
+// // let student13 = "Trinity"
+// // let student14 = "TG"
+
+// // WITH ARRAYS
+const students = ["Dami", "Seyi", "Ope", "Oscar", "Tunde", "Victory", "Samad", "Andy", "Bukola", "Deji", "Tolu", "Chidinma", "Trinity", "TG"];
+console.log(students);
+
+// Key Points About Arrays
+// 1. Arrays store ordered lists of items.
+// 2. Arrays use index numbers to find items.
+// 3. Index starts at 0 (the first item is at index 0)
+// 4. Arrays can hold any type of data — numbers, strings, booleans, even other arrays
+
+// EXAMPLE:
+// a.  String
+const grains = ["rice", "maize", "cowpea", "millet"];
+console.log(grains);
+
+// b. Numbers
+const numbers = [300, 20, 10, 15.5, 40];
+console.log(numbers);
+
+// c. Mixed data - string, number, boolean.
+const mixedData = ["Father figure", "Reverend", "Mr Bean", 20, true, false, 40];
+console.log(mixedData);
+
+
+// How to access elements in our array by their index
+// using grains array
+console.log(grains[0]);
+console.log(grains[1]);
+console.log(grains[2]);
+console.log(grains[3]);
+
+
+// We can also change elements in an array by accessing their index
+grains[0] = "sorghum";
+console.log(grains);
+
+
+// ITERATING THROUGH ARRAYS
+// Iterating means going through the elements one at a time.
+// A for loop uses indexes to access the elements:
+const waterBrands = ["eva", "aquafina", "nestle", "voss", "nirvana", "cway"];
+
+for (let i = 0; i < waterBrands.length; i++) {
+    console.log(waterBrands[i]);
+    
+}
+
+for (const w of waterBrands) {
+    console.log(w);
+    
+}
+
+
+// The for...in loop
+// for...in loops through an object’s enumerable property keys. When used with a simple array, it gives us the indexes as strings.
+// Syntax:
+// for (const key in object) {
+//     // Code to repeat
+// }
+
+for (const w in waterBrands) {
+    console.log(w); //gives us the index of the array items.
+    
+}
+
+// Alternatively:
+for (const w in waterBrands) {
+    console.log(waterBrands[w]);
+    
+}
+
+// Prefer for...of when you want array values. for...in is generally used with objects because it can also include other enumerable properties.
+
+
+
+// Array Properties and Array Methods
+// Arrays have properties (like information about the array) and methods (functions you can use on arrays).
+
+// | Method/property/operator | Purpose                              |
+// |--------------------------|--------------------------------------|
+// | `length`                 | Counts elements                      |
+// | `push()`                 | Adds to the end                      |
+// | `pop()`                  | Removes the last element             |
+// | `unshift()`              | Adds to the beginning                |
+// | `shift()`                | Removes the first element            |
+// | `includes()`             | Checks if an element exists          |
+// | `indexOf()`              | Finds an element’s first index       |
+// | `lastIndexOf()`          | Finds an element’s last index        |
+// | `join()`                 | Joins elements into a string         |
+// | `at()`                   | Gets an element by index             |
+// | `copyWithin()`           | Copies elements within the array     |
+// | `splice()`               | Adds, removes or replaces elements   |
+// | `delete`                 | Removes an element, leaving a gap    |
+
+
+// | Method/property/operator | Changes the original array? |
+// |--------------------------|-----------------------------|
+// | `length`                 | No, when read               |
+// | `push()`                 | Yes                         |
+// | `pop()`                  | Yes                         |
+// | `unshift()`              | Yes                         |
+// | `shift()`                | Yes                         |  
+// | `includes()`             | No                          |
+// | `indexOf()`              | No                          |
+// | `lastIndexOf()`          | No                          |
+// | `join()`                 | No                          |
+// | `at()`                   | No                          |
+// | `copyWithin()`           | Yes                         |
+// | `splice()`               | Yes                         |
+// | `delete`                 | Yes                         |
+
+
+// IMPORTANT ARRAY PROPERTY
+// 1. length: tells you how many items or elements are in the array.
+
+// The length property
+// length tells us how many elements an array contains.
+const players = ["Ronaldo", "Messi", "Neymar", "Damidinho", "Bruno"];
+console.log(players.length);
+
+// We can also use the length property to get to the index/value of the last item in the array
+// index
+console.log(players.length - 1);
+
+// value
+// console.log(players[players.length - 1]);
+// or
+// console.log(players[4]);
+
+
+// 2. .push(): adds element to the end of an array
+// USING players above
+players.push("Saka");
+console.log(players);
+
+
+// 3. .pop(): this removes an item from the end of an array. it removes the last item in an array
+players.pop();
+console.log(players);
+
+// 4. .unshift(): adds an item to the beginning of an array
+players.unshift("Jude");
+console.log(players);
+
+
+// 5. .shift(): removes an item from the beginning of an array
+players.shift();
+console.log(players);
+
+//  6. indexOf(): find the position of an item
+const i = players.indexOf("Ronaldo");
+console.log(i);
+
+console.log(players.indexOf("Messi"));
+
+
+// 7. lastIndexOf(): finds the index of a given element
+players.unshift("Bruno")
+console.log(players.lastIndexOf("Bruno"));
+
+
+// 8. at(): finds the element with the given index
+console.log(players.at(0));
+
+
+// 9. delete
+// // Removes an element but leaves an empty slot in the array. The array’s length stays the same.
+delete players[4];
+
+console.log(players);
+
+
+
+// 10. splice()
+// is one of the most powerful (and sometimes confusing) array methods
+// because it can:
+// Remove items from an array
+// Add new items to an array
+// Replace items in an array
+
+// syntax
+// array.splice(startIndex, deleteCount, item1, item2, ...)
+
+// Parameters
+// start: The index where the change begins.
+// deleteCount: How many elements to remove.
+// item1, item2: Optional elements to insert.
+
+// i. Remove an element:
+players.splice(1, 2);
+console.log(players);
+
+// ii. Add an element/s:
+players.splice(0, 0, "Yamal", "Suarez", "JT");
+console.log(players);
+
+// Replace an element:
+players.splice(2, 1, "Haaland");
+console.log(players);
+
+
+// 11. copyWithin() copies part of an array to another position inside the same array.
+// It does NOT create a new array.
+// It changes the original array.
+
+//  Basic Syntax
+// array.copyWithin(target, start, end)
+
+// target → Where to paste the copied items
+// start → Where to start copying from
+// end (optional) → Where to stop copying (not included)
+// Example 1:
+const clubs = ["Arsenal", "ManU", "ManCity", "Barca", "Madrid", "Juventus", "Chelsea", "PSG", "liverpool"];
+console.log(clubs.copyWithin(1, 6, 7));
+
+// Example 2
+const biscuits = ["speedy", "oreos", "digestive", "peppersnacks", "cabin", "crackers"];
+console.log(biscuits.copyWithin(4, 0, 2));
+
+
+// 12. slice(): Copy Part of an Array
+// Definition: Returns a new array with a portion of the original array.
+// syntax
+// array.slice(start, end)
+const churches = ["Deeper", "Covenant", "RCCG", "Winners", "CAC", "MFM", "Cele", "Cherubim", "Foursquare"];
+
+let newArray = churches.slice(5, 8);
+console.log(newArray);
+
+
+// THE SPREAD OPERATOR AND ARRAY DESTRUCTURING
+// The spread operator (...) expands an array into individual values. Array destructuring extracts values from an array into variables.
+
+// 1. Spread Operator (...)
+// Think of spread as unpacking the items in an array.
+
+// It "spreads out" the elements of an array (or object) into individual items.
+
+
+// Why It’s Useful:
+
+// Makes copying arrays simple.
+
+// Makes combining arrays simple.
+
+// Works greatly with function calls that take multiple arguments.
+
+// syntax
+// const newArray = [...oldArray]
+// const combined = [...array1, ...array2]
+
+// EXAMPLE:
+// i. simple operation
+const schools = ["Tech Studio", "UNILAG", "OAU", "OOU"];
+console.log(schools);
+console.log(...schools);
+
+// ii. Copy an array
+const org = ["WHO", "AU", "UN", "UNESCO", "UNICEF", "NBA"];
+const orgCopy = [...org];
+console.log(orgCopy);
+
+
+// iii. Combine arrays
+const skills = ["patience", "communication", "flexibility", "adaptibility", "teamwork"];
+
+const skillsTwo = ["logical thinking", "problem-solving", "relationship-building"];
+
+const skillset = [...skills, ...skillsTwo];
+console.log(skillset);
+
+
+// iv. Add items while creating a new array
+const bodmas = ["bracket", "of", "division", "multiplication", "addition", "subtraction"];
+
+const presidents = ["obasanjo", "goodluck", "tinubu", "trump"];
+
+const combination = [...bodmas, ...presidents, "mountains", "plains", "forests", "swamp"];
+
+console.log(combination);
+
+
+// 2. Array Destructuring
+// Array destructuring lets us take values from an array and store them in variables, based on their positions.
+
+// Without destructuring:
+const states = ["Ogun", "Lagos", "Adamawa", "Oyo"];
+// console.log(states[0]);
+// console.log(states[1]);
+// console.log(states[2]);
+// console.log(states[3]);
+
+
+// With destructuring:
+// Extracting all items
+const [firstState, secondState, thirdState, fourthState] = states;
+console.log(firstState);
+console.log(secondState);
+console.log(thirdState);
+console.log(fourthState);
+
+
+// B. Skip an item
+const countries = ["Nigeria", "Greece", "Spain", "Italy", "Turkey"];
+const [ , secondCountry, thirdCountry, fourthCountry, , fifthCountry = "Jamaica"] = countries;
+console.log(secondCountry);
+console.log(thirdCountry);
+console.log(fourthCountry);
+console.log(fifthCountry);
+
+
+
+// C. Set a default value
+const names = ["Bukola"];
+const [firstName, secondName = "Guest"] = names;
+console.log(firstName);
+console.log(secondName);
+
+
+// D. Without a default
+const [oldName, newName] = ["Bukola"];
+console.log(newName);
+
+
+// 3. Using Rest with Destructuring
+// Inside a destructuring pattern, ... is called rest syntax. It collects the remaining items into a new array.
+const hobby = ["talking", "chess", "sleeping", "looking for trouble", "gaming"];
+const [firstHobby, ...otherHobbies] = hobby;
+console.log(firstHobby);
+console.log(otherHobbies);
+
+
+// | Syntax            | What it does                                |
+// |-------------------|---------------------------------------------|
+// | `[...fruits]`     | Spreads items into a new array          |
+// | `const [first, ...others] = fruits` | Collects** remaining items into an array |
