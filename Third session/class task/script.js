@@ -33,7 +33,7 @@ for (let i=1; i<=15; i+=2){
 
 // TASK 4
 for (let i=1; i<=5; i++){
-    console.log( "I love JavaScript");
+    console.log("I love JavaScript");
     
 }
 
