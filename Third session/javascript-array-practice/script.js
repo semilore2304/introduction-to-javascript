@@ -84,7 +84,11 @@ console.log(color);
 console.log(color.indexOf("Blue"));
 console.log(color.lastIndexOf("Blue"));
 console.log(color.indexOf("Purple"));
-console.log(color[color.length - 1]);
+
+// -1
+
+console.log(color.at(-1));
+
 
 
 
@@ -97,7 +101,11 @@ console.log(color[color.length - 1]);
 // - Use a for...in loop to display the indexes.
 
 
-const phoneBrands=["Samsung","Infinix","Vivo","Redmi","Tecno","Iphone"]
+const phoneBrands=["Samsung","Infinix","Vivo","Redmi","Tecno","Iphone"];
+for (let i=1; i<phoneBrands; i++){
+    console.log(phoneBrands[i]);
+    
+}
 for (let p of phoneBrands){
     console.log(p);
     
@@ -133,7 +141,9 @@ console.log(animals);
 // - Display the array after each operation.
 
 const courses = ["HTML", "CSS", "JavaScript"];
-courses.splice(0,0,"Web Fundamentals")
+console.log(courses.splice(2,0,"Git"));
+
+courses.splice(0,1,"Web Fundamentals")
 console.log(courses);
 
 
@@ -158,7 +168,7 @@ console.log(courses);
 // NOTE:It did not
  
 
-// 8. Practise copyWithin()
+// 8. Practice copyWithin()
 
 // Create this array:
 
