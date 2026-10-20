@@ -173,7 +173,7 @@ console.log(courses);
 // - State in a comment whether copyWithin() created a new array.
 
 const letters = ["A", "B", "C", "D", "E"];
-letters.copyWithin(3,0,4)
+letters.copyWithin(3,0,2)
 console.log(letters);
 console.log(letters.length);
 
@@ -289,11 +289,7 @@ console.log(firstUser);
 console.log(secondUser);
 
 // The seconduser would be undefined without the value
-
-
-
-
-// 
+ 
 // 14. Collect Remaining Items with Rest
 
 // Create this array:
