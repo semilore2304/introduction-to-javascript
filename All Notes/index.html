@@ -1,0 +1,1750 @@
+1. Introduction to the Web
+Brief history of the Web
+The Web, also called the World Wide Web or WWWW, was invented by Tim Berners-Lee in 1989 while he was working at CERN. It was initially created to help researchers share and connect information. It has since developed into a system of connected webpages and digital resources that users access through the Internet with browsers such as Google Chrome, Mozilla Firefox, Safari and Microsoft Edge.
+
+Simple distinction: The Internet is the worldwide network connecting computers and devices. The Web is one service that uses the Internet to provide linked webpages and resources.
+
+1.1 What is web development?
+Web development is the process of creating websites and web applications. It includes building what users see and the systems that work behind the scenes.
+Examples include social-media websites, search engines, school portals, banking applications and online stores.
+1.2 How the Web works: client-server sequence
+Websites are stored on special computers called servers. A browser acts as a client because it requests resources from a server.
+The user enters a URL or selects a link.
+The browser sends an HTTP request to the server.
+The server receives and processes the request.
+The server sends an HTTP response containing the webpage resources.
+The browser reads the HTML, CSS and JavaScript.
+The browser renders the visual webpage.
+
+Real-world analogy: 
+Think of the process as a restaurant. The customer is the user, the waiter is the browser, the order is the request, the kitchen is the server and the prepared meal is the response.
+
+How websites work
+A website is a collection of related webpages hosted on a server. When a user enters a URL, the browser requests the required resources. The server responds, and the browser combines the HTML, CSS, JavaScript and media to display the page.
+
+Frontend - the part users see and interact with.
+Backend - the system/systems working behind the scenes.
+
+Restaurant website example: the displayed menu and order form are frontend features; storing the order, checking availability and calculating the total are backend operations.
+
+The three core Web technologies - HTML, CSS and Javascript.
+
+HTML - Structures and describes webgage content.
+CSS - Controls appearance, spacing and layout.
+Javascript - Adds functionality, interactivity/behaviour. 
+
+What is HTML?
+HTML stands for HyperText Markup Language. It is the foundation of a webpage and defines content such as headings, paragraphs, links, images, lists, tables and forms.
+Key characteristics of HTML
+Structure: HTML provides the basic structure of a webpage.
+Markup language: HTML uses tags to mark up and describe content.
+Not a programming language: HTML does not provide general programming logic such as loops and conditions.
+Document format: HTML files are text documents that normally end with the .html extension.
+Web standard: modern HTML is developed as a living standard and interpreted by web browsers (HTML5).
+
+Key idea: HTML is the backbone of a webpage. CSS improves its appearance, while JavaScript adds interactivity.
+
+<!DOCTYPE html> - Declaring the html documnent. Tells the browser to use modern html
+<html lang="en"> - Contains the document and identifies its language
+<head> - Contains webpage information and linked resources
+    <meta charset="UTF-8"> - - Supports a wide range of characters
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> - Helps the page display correctly on mobile devices
+    <title>Document</title> - Sets the browser-tab title
+</head>
+<body>
+Contains visible webpage content- what we want the users to see. 
+</body>
+</html>
+
+This is the boiler plate - template for witing html with ease. Saves time and stress from writing them from scratch.
+
+<!-- Typography HTML TAGS, ELEMENTS AND ATTRIBUTES  -->
+    <!-- A tag is the markup written inside angle brackets.  -->
+     E.g.  <body> 
+        <!--     
+    An element normally includes an opening tag, content and a closing tag.  -->
+
+    <body>It is a bag.</body>
+
+    <body>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, dolorem. Quos velit repudiandae, odit eligendi officiis delectus autem numquam dicta. Lorem is a placeholder for content.</body>
+    
+    <!-- An attribute provides additional information inside the opening tag. -->
+
+    WE WILL DIVE DEEPER INTO HTML TAGS, ELEMENTS AND ATTRIBUTES TOMORROW.
+</body>
+</html>
+
+Short cut for text-wrap for windows: Alt Z; mac: Option Z
+
+<!-- TAKE HOME TASK -->
+ Read up on html tags, elements and attributes. 
+ 1. Identify four different html tags.
+ 2. Write four different elements.
+ 3. Apply two attributes to any two of the elements you will write.
+
+
+ 1ST SEPTEMBER 2026<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second session</title>
+</head>
+<body>
+ 
+<!-- TAKE NOTE: MANY HTML TAGS COME IN PAIRS - THE OPENING AND CLOSING COUNTERPART. EG: <p></p> -->
+    <!-- COMMON HTML TAGS -->
+<!-- 1. HTML Headings: <h1></h1> to <h6></h6>
+These set of tags indicate headings. Often in hierarchical order... H1 to H6.
+Example:  -->
+<h1>The Significance of Web Development in the 21st Century </h1>
+<h2>Introduction</h2>
+<h3>Improving Communication and Global Connectivity</h3>
+<h3>Improving Communication and Global Connectivity</h3>
+<h3>Improving Communication and Global Connectivity</h3>
+<h3>Improving Communication and Global Connectivity</h3>
+<h4>Lorem ipsum dolor sit amet.</h4>
+<h5>Lorem ipsum dolor sit amet.</h5>
+<h6>Lorem ipsum dolor sit amet.</h6>
+
+
+<!-- 2. Paragraph -->
+ <p>Web development is one of the most important aspects of technology in the 21st century. It involves creating, building and maintaining websites and web applications that people access through the internet. As the world becomes increasingly digital, web development plays a major role in communication, education, business, healthcare and entertainment. It enables individuals and organisations to share information, provide services and connect with people across the world. </p>
+
+ <p>Web development has transformed how people communicate. Websites, social media platforms, email services and online communities allow individuals to interact regardless of distance. Businesses can communicate with customers, schools can connect teachers with learners, and organisations can reach audiences in different countries.</p>
+
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas sit labore, hic, unde recusandae ut perferendis aut iusto tempora aliquam cupiditate ex sapiente delectus a, placeat facilis voluptatibus laudantium officiis? Sunt aperiam earum, libero sapiente optio necessitatibus iure maxime.</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas sit labore, hic, unde recusandae ut perferendis aut iusto tempora aliquam cupiditate ex sapiente delectus a, placeat facilis voluptatibus laudantium officiis? Sunt aperiam earum, libero sapiente optio necessitatibus iure maxime.</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas sit labore, hic, unde recusandae ut perferendis aut iusto tempora aliquam cupiditate ex sapiente delectus a, placeat facilis voluptatibus laudantium officiis? Sunt aperiam earum, libero sapiente optio necessitatibus iure maxime.</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas sit labore, hic, unde recusandae ut perferendis aut iusto tempora aliquam cupiditate ex sapiente delectus a, placeat facilis voluptatibus laudantium officiis? Sunt aperiam earum, libero sapiente optio necessitatibus iure maxime.</p>
+
+</body>
+</html>
+
+Typography HTML TAGS, ELEMENTS AND ATTRIBUTES (CONTINUATION)
+
+CAN YOU SPOT FORMATTING/INDENTATION FEATURES IN THIS WRITE-UP?
+
+TITLE: The Significance of Web Development in the 21st Century - H1 TAG
+
+Introduction - H2 TAG
+Web development is one of the most important aspects of technology in the 21st century. It involves creating, building and maintaining websites and web applications that people access through the internet. As the world becomes increasingly digital, web development plays a major role in communication, education, business, healthcare and entertainment. It enables individuals and organisations to share information, provide services and connect with people across the world. - P TAG
+
+Improving Communication and Global Connectivity - H3 TAG
+
+Web development has transformed how people communicate. Websites, social media platforms, email services and online communities allow individuals to interact regardless of distance. Businesses can communicate with customers, schools can connect teachers with learners, and organisations can reach audiences in different countries. - P TAG
+
+Through well-developed websites and web applications, information can be shared quickly and accessed from almost anywhere. This has made the world more connected and encouraged collaboration among people from different cultures and professional backgrounds. - P TAG
+
+Supporting Businesses and Economic Growth - H3 TAG
+
+Modern businesses rely heavily on web development. A professional website helps a business establish an online presence, advertise its products and services, communicate with customers and build credibility. E-commerce websites also allow customers to browse products, make payments and place orders without visiting a physical shop. - P TAG
+
+Web development has created new employment and entrepreneurial opportunities. People can work as front-end developers, back-end developers, full-stack developers, web designers and software engineers. Small businesses can also reach wider markets through affordable digital platforms, thereby contributing to economic growth. - P TAG
+
+Transforming Education - H3 TAG
+
+Web development has significantly improved access to education. Learning platforms, school portals, digital libraries and educational websites provide students with learning materials from different parts of the world. Learners can attend virtual classes, submit assignments, complete assessments and communicate with teachers online. - P TAG
+
+Web technologies also make learning more engaging through videos, quizzes, simulations and interactive exercises. This is particularly valuable for learners who may not have easy access to traditional educational institutions. - P TAG
+
+Improving Access to Essential Services - H3 TAG
+
+Many essential services are now delivered through web applications. Patients can book medical appointments, access health information and communicate with healthcare professionals online. Citizens can use government websites to complete applications, pay bills and obtain important information. - P TAG
+
+Banking and financial services have also become more accessible through secure online platforms. Users can transfer money, review transactions and make payments conveniently. These developments save time and make essential services available to more people. - P TAG
+
+Encouraging Innovation and Problem-Solving - H3 TAG
+
+Web development gives people the tools to create solutions to real-world problems. Developers can build platforms for managing events, finding jobs, tracking expenses, organising tasks or supporting local communities. Combining web development with technologies such as artificial intelligence and cloud computing makes it possible to create even more intelligent and effective solutions. - P TAG
+
+Web development also encourages creativity, critical thinking and continuous learning. Since technology changes rapidly, developers must regularly improve their skills and explore better ways to meet users’ needs. - P TAG
+
+Promoting Inclusion and Accessibility - H3 TAG
+
+A well-developed website can make information and services accessible to people with different needs. Developers can use appropriate colours, readable text, keyboard navigation, captions and meaningful HTML elements to support users with disabilities. - P TAG
+
+Responsive web development also ensures that websites work effectively on desktops, tablets and mobile phones. This is especially important in a world where many people primarily access the internet through smartphones. However, developers must continue addressing challenges such as unequal internet access, privacy concerns and cybersecurity threats. - P TAG
+
+Conclusion - H2 TAG
+
+Web development is a vital part of life in the 21st century. It strengthens communication, supports businesses, expands access to education and improves the delivery of essential services. It also creates employment opportunities and enables developers to design solutions to social and economic challenges. - P TAG
+
+As technology continues to evolve, the importance of web development will continue to grow. Learning web development therefore provides more than technical knowledge; it equips individuals with the ability to create useful digital products, contribute to innovation and participate actively in the modern digital world. - P TAG
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text formatting tags</title>
+</head>
+<body>
+<!-- TEXT FORMATTING TAGS
+Text formatting tags are HTML elements used to change the appearance of text or show its importance, meaning, or purpose. -->
+
+<!-- a. <em> (Emphasis): Italicizes the text to indicate emphasis.  -->
+    <!-- In a simple sentence -->
+    <p>I am a <em>champion</em>.</p>
+    <p>I study fullstack course at <em>Tech Studio</em>.</p>
+    <p><em>Arsenal</em> is the reigning Premier League Champions.</p>
+<p>
+    <em>Web development</em> has significantly improved access to education. Learning platforms, school portals, digital libraries and educational, <em>websites</em> provide students with learning materials from different parts of the world. Learners can attend virtual classes, submit assignments, complete assessments and communicate with teachers online.
+</p>
+
+<!-- b. <strong> (strong emphasis): Makes the text bold to indicate strong importance or urgency. -->
+ <!-- In a simple sentence -->
+    <p>I am a <strong>champion</strong>.</p>
+    <p>I study fullstack course at <strong>Tech Studio</strong>.</p>
+    <p><strong>Arsenal </strong>is the reigning Premier League Champions.</p>
+
+
+<!-- c. <b> (Bold): Makes the text bold without implying any extra importance. -->
+<p>I am a <b>champion</b>.</p>
+    <p>I study fullstack course at <b>Tech Studio</b>.</p>
+    <p><b>Arsenal</b> is the reigning Premier League Champions.</p>
+
+<!-- d. <i> (Italic):  Italicizes the text without implying emphasis. -->
+    <p>I am a <i>champion</i>.</p>
+    <p>I study fullstack course at <i>Tech Studio</i>.</p>
+    <p><i>Arsenal</i> is the reigning Premier League Champions.</p>
+<!-- 
+e. <sup> (Superscript): Displays text as superscript (e.g., for exponents) -->
+<p>2 <sup>3</sup> equals 8.</p>
+
+<!-- f. <sub> (Subscript):(inserts a text as subscript (e.g., for chemical formulas). -->
+<p>H<sub>2</sub>0.</p>
+
+<!-- g. <del> (Deleted text): Indicates that the text has been deleted or is no longer accurate, often shown with a strikethrough. -->
+<p>Make hay while the sun shines. <del>Who said that?</del> </p>
+
+ <!-- h. <ins> (Inserted text):  Indicates that text has been inserted, often underlined. -->
+I am a Manchester United Fan <ins>I am writing this just to make someone happy</ins> by blood.
+
+ <!-- i. <mark> (highlights text): indicates that text has been highlighted,displays the text with a yellow background (search results,key points) -->
+<p>
+    <em>Web development</em> has significantly improved access to education. Learning platforms, school portals, digital libraries and educational, <em>websites</em> provide students with learning materials from different parts of the world. Learners can attend <mark>virtual classes</mark>, submit <mark>assignments</mark>, complete <mark>assessments</mark> and communicate with teachers online.
+</p>
+
+<!-- j. <u> (underlines the text): it visually draws a line under the text but does not add emphasis or importance (e.g for styling or for spelling errors)
+Example: -->
+I will be at the <u>teater</u> <mark>theatre</mark> this evening.
+
+<!-- k. <br> (line break): it is used to insert a line break, moving the text to a new line without starting a new paragraph.
+Example:  -->
+<p>
+    <em>Web development</em> has significantly improved access to education. <br> Learning platforms, school portals, digital libraries and educational, <br><em>websites</em> provide students with learning materials from different <br> parts of the world. Learners can attend <mark>virtual classes</mark>, submit <br><mark>assignments</mark>, complete <mark>assessments</mark> and communicate with teachers online.
+</p>
+
+ <p>
+         Address: <br>
+         No. 12 Main street <br>
+         Lagos
+         </p>
+
+<!-- l. <small> (display text in smaller text): it is used to display text in a smaller size than the surrounding text.(e.g for fine print,disclaimers,copyright notices). -->
+<!-- Example: -->
+<p><small>@</small> Copyright reserved.</p>
+<p>These are <small>minions</small>.</p>
+
+<!-- m. <hr> It emphasizes thematic context. HR means horizontal rule. Seperate sections or indicate a change of topic. -->
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro iure consectetur incidunt minima dolorum quos repudiandae voluptatum odio, consequuntur harum excepturi aliquid, est sunt alias omnis architecto culpa dolores blanditiis quas! Perspiciatis aperiam facere autem excepturi, aspernatur vel obcaecati!
+</p>
+<hr>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro iure consectetur incidunt minima dolorum quos repudiandae voluptatum odio, consequuntur harum excepturi aliquid, est sunt alias omnis architecto culpa dolores blanditiis quas! Perspiciatis aperiam facere autem excepturi, aspernatur vel obcaecati!
+</p>
+</body>
+</html>
+
+Class Task: Create a Formatted Profile
+
+Create an HTML page titled “About Me”. Your page must include:
+
+A heading displaying About Me.
+A paragraph introducing yourself.
+Use <strong> to show your name.
+Use <em> to emphasise something you enjoy doing.
+Use <mark> to highlight the course you are studying.
+Write a mathematical expression using <sup>.
+Write a chemical formula using <sub>.
+Display an old statement with <del> and its correction with <ins>.
+Use <br> to display your address on separate lines.
+Use <hr> to separate your introduction from your address.
+Add a copyright notice using <small>.
+
+<!-- LISTING TAGS
+(`<ul></ul>, <ol></ol>, <li></li>`:
+     List tags are used to create lists. Listing can be done in two ways, ordered list `<ol></ol>` and unordered list `<ul></ul>`. This tags use `<li>` which stands for list items to list out elements. Ordered lists are listed with numbers while unordered list are listed with bullet points.
+
+EXAMPLE:  -->
+<!-- ordered list -->
+ <ol>
+    <li>Fawaz</li>
+    <li>IB</li>
+    <li>Ayokunmi</li>
+    <li>Dami</li>
+    <li>Imran</li>
+    <li>illiam</li>
+    <li>Emmanuel</li>
+    <li>Oreoluwa</li>
+ </ol>
+
+ <!-- unordered list -->
+  <ul>
+     <li>Fawaz</li>
+    <li>IB</li>
+    <li>Ayokunmi</li>
+    <li>Dami</li>
+    <li>Imran</li>
+    <li>illiam</li>
+    <li>Emmanuel</li>
+    <li>Oreoluwa</li>
+  </ul>
+
+  Quick one:
+  ATTRIBUTE: AN ATTRIBUTE IS ADDED IN THE OPENING TAGS TO USUALLY ADD ADDITIONAL INFORMATION. 
+  <!-- ordered list with start attribute -->
+   <ol start="5">
+    <li>Fawaz</li>
+    <li>IB</li>
+    <li>Ayokunmi</li>
+    <li>Dami</li>
+    <li>Imran</li>
+    <li>illiam</li>
+    <li>Emmanuel</li>
+    <li>Oreoluwa</li>
+ </ol>
+
+  <ol start="100">
+    <li>Fawaz</li>
+    <li>IB</li>
+    <li>Ayokunmi</li>
+    <li>Dami</li>
+    <li>Imran</li>
+    <li>illiam</li>
+    <li>Emmanuel</li>
+    <li>Oreoluwa</li>
+ </ol>
+
+ <!-- ordered list with reversed attribute -->
+  <ol start="100" reversed>
+    <li>Fawaz</li>
+    <li>IB</li>
+    <li>Ayokunmi</li>
+    <li>Dami</li>
+    <li>Imran</li>
+    <li>illiam</li>
+    <li>Emmanuel</li>
+    <li>Oreoluwa</li>
+ </ol>
+
+ <!-- 
+Anchor Tags (`<a>`) 
+        
+An anchor tag in HTML is used to create hyperlinks, which allow users to navigate between different pages, sections within the same page, or even external websites. The anchor tag is represented by the `<a>` element, and the primary attribute used with it is `href` (Hypertext Reference), which specifies the destination of the link. -->
+
+<!-- basic syntax
+     <a href="destination of the link/url">link name</a> -->
+
+
+<!-- 1. Linking to Other Web Pages (External Links):
+- Purpose**: To direct users to a different website or an external page. -->
+<a href="https://www.techstudioacademy.com/">Tech Studio</a>
+
+<a href="https://www.techstudioacademy.com/">Contact IB</a>
+
+<!-- ATTRIBUTE target=_blank - OPENS THE LINK IN A NEW TAB -->
+<a href="https://www.techstudioacademy.com/" target="_blank">Contact Dami</a>
+
+
+<!-- 2. Linking to Pages Within Your Project (Internal Links):
+  - Purpose: To navigate between different pages of your own website or project. -->
+
+  <a href="./index.html" target="_blank">Project</a>
+
+  QUICK ONE:  DIV <div> TAG IS A GENERAL CONTAINER.
+
+    3. Linking to Sections Within the Same Page:
+    - Purpose**: To navigate to specific sections within the current webpage.
+    - How it Works: You use `id` attributes (a unique identifier attribute) to create targets within the page, then link to them using the anchor tag.
+<div id="ib">
+<h3>About IB</h3>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis omnis quam tempora sit velit nulla impedit repudiandae natus est, nemo iusto excepturi pariatur soluta! Quibusdam fuga cupiditate aspernatur, expedita neque consequatur vitae itaque exercitationem, porro, possimus voluptatem. Nam rem nesciunt iste beatae optio aut eius illum. Nostrum sunt impedit eum natus deserunt quis debitis dignissimos adipisci vel incidunt nesciunt magni tempore amet praesentium, dicta aut. Repellat numquam suscipit nisi eius ratione voluptate tempora ipsum consequatur asperiores quaerat porro consectetur ab inventore enim eum accusamus quisquam, esse corrupti, voluptas temporibus eaque fugiat labore voluptatem. Cupiditate voluptas necessitatibus tenetur ducimus ab harum magni accusantium eveniet voluptatem perspiciatis suscipit sit, explicabo odit sint quisquam exercitationem porro accusamus, obcaecati ratione quia consectetur dolorem ullam dignissimos? Voluptate officiis velit ipsum temporibus consequuntur pariatur, reiciendis molestias distinctio? Error in fugit dolore voluptates nisi, dignissimos saepe asperiores ducimus fuga. Odit pariatur deserunt nemo porro dolores minus ab, velit accusamus impedit at error sit? Provident, totam? Ea sed omnis repellat eveniet, tempora quos ratione distinctio molestiae sunt nihil laudantium dolor aliquid amet autem dolorum reiciendis suscipit! Beatae ipsam debitis impedit officia similique veritatis ducimus optio iste ratione tenetur cum nulla deserunt, itaque nam necessitatibus nihil quisquam reiciendis amet recusandae, vitae voluptatibus eveniet illum sit? Sed eveniet natus similique consectetur impedit rem cumque eligendi nesciunt voluptas laboriosam? Sint similique illum tempore, mollitia voluptatum excepturi enim magni nisi optio voluptate saepe voluptatibus quaerat laudantium harum odit est corrupti delectus quibusdam dicta, non sit praesentium! Tempore possimus libero porro saepe itaque vel qui incidunt quo cum perferendis illo facere, amet ad recusandae sit aperiam atque distinctio. Distinctio rerum ab accusantium officia error? Nesciunt ipsam maxime expedita nam! Repellendus nostrum deserunt ratione ad vero qui laudantium, molestias corporis inventore id est libero magni vel sunt et tenetur, fugit aliquid! Explicabo, placeat assumenda? Voluptas quae aliquid cumque nostrum ullam explicabo! Ex culpa pariatur hic, dolor labore natus quidem inventore corporis! Sit officiis animi nostrum neque nulla nobis eaque omnis mollitia consectetur voluptate iusto minima qui saepe sequi at nemo commodi voluptates eligendi blanditiis aut nesciunt doloremque, quia obcaecati corrupti? Natus repellendus reprehenderit atque pariatur, quisquam quidem illo tempore at animi culpa labore asperiores quia, cumque ut dignissimos nesciunt quae veritatis modi? Libero eos quos unde laboriosam soluta. Cumque delectus quisquam consectetur provident sit maxime libero, aut perferendis praesentium vitae consequuntur aliquam facilis distinctio porro rem? Atque, temporibus! Fuga esse, repudiandae illo nam neque necessitatibus adipisci voluptatum voluptate quibusdam temporibus voluptas. Itaque facere hic laudantium voluptas consectetur alias eum exercitationem tempore esse non. Itaque voluptatem modi, et quo quaerat, fuga non quod deleniti perferendis, minima aliquam distinctio eius recusandae odit ea facilis asperiores accusamus consequatur quia vel. Porro iusto magni consectetur cumque a quo asperiores impedit. Ad totam nisi non molestiae praesentium reprehenderit nobis voluptatum perferendis excepturi. Ab dolorum dolor dolorem, ea nam molestiae dignissimos maxime facere commodi magnam optio architecto totam, quam vero. Placeat laudantium enim eaque, blanditiis cum totam ut voluptates odio porro, qui fugit quis quidem illum et nostrum, sed sapiente.</p>
+</div>
+
+<div id="dami">
+<h3>More about Dami</h3>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perspiciatis sed libero necessitatibus, quibusdam in. Officia suscipit dolore culpa in porro et ipsam, ratione odio hic aperiam. Enim facilis aspernatur minima quasi quo consectetur quam nesciunt recusandae provident numquam eaque nemo sapiente a nobis ratione, nostrum voluptatum eveniet quos! Culpa reprehenderit ut facilis eum, harum temporibus animi ipsa cumque neque voluptate, quo blanditiis dolor dolorum ad voluptatibus minus ex, molestiae aut molestias exercitationem perspiciatis fugit sunt. Blanditiis minima fugit illo eius animi! Quasi suscipit sapiente nihil itaque ullam quisquam ab perspiciatis reiciendis, porro commodi. Quos illo distinctio maiores, quidem ad dignissimos repellat doloremque error deserunt aliquam dolore. Unde provident consequatur praesentium voluptas cupiditate itaque eveniet nemo quaerat illum magni ut laborum eos, vero qui ea recusandae quam ad? Sapiente obcaecati voluptatum facere, explicabo quibusdam omnis eum a ratione iusto, molestiae ad voluptate maxime blanditiis eius itaque vel quo nulla, delectus nemo quaerat ut porro voluptates? Veniam, voluptates similique maxime, voluptate porro nesciunt dolor voluptatibus quis tenetur adipisci inventore? Totam mollitia expedita veniam, beatae distinctio temporibus labore ipsum modi architecto illum impedit quibusdam, nesciunt molestias quas illo minima nam asperiores velit in. Asperiores dolore id dolor rem, cumque possimus beatae laborum minus quod officia qui. Et harum recusandae fugit porro nihil, culpa, voluptatibus quo similique sequi esse inventore saepe impedit eaque? Nam ea dolorem sequi, unde obcaecati aspernatur quis quaerat veniam ipsum sit temporibus ab labore. Assumenda ipsa, eum, voluptatibus tempore illo commodi saepe provident beatae placeat in enim consequatur, quae voluptatum obcaecati corrupti totam veniam ratione aliquam? Tenetur at obcaecati unde aut sit laudantium dicta non nemo, facilis maiores modi consequuntur, quia debitis eum doloribus repudiandae pariatur esse impedit. Illum aperiam quos corporis qui nisi nam beatae commodi, dignissimos fugiat accusantium quae officiis veritatis est nobis officia modi totam dolor quaerat error atque quibusdam? Nostrum earum corporis, corrupti alias asperiores voluptas. Eveniet corporis natus facere dicta amet ipsa voluptatibus accusantium aliquid, facilis totam assumenda necessitatibus quo molestiae, quia voluptatem fugit non ad maiores error alias ea ab eligendi delectus nemo! Nemo consectetur mollitia dolorum beatae ducimus id maxime iusto eligendi ratione saepe ipsam cumque minima quis similique expedita dolores, quia quidem quibusdam earum nesciunt dolor delectus. Maiores expedita, unde aliquam voluptatibus animi quod perferendis soluta dignissimos illum nemo in labore quasi est libero, laborum maxime ex vero iure vitae reiciendis cum, excepturi neque. Architecto delectus ipsam, possimus eos id itaque corporis dolor soluta doloremque vel eligendi sit adipisci quaerat error, quo alias ipsum aperiam fuga! Vitae impedit eveniet, debitis aperiam temporibus incidunt quod dolores accusamus hic laudantium, eaque soluta nisi perferendis odio officia dolorum et nulla quas, ab natus quia excepturi adipisci! Repudiandae laudantium maxime reiciendis, quis, dolorem, iste labore officia molestias quos obcaecati ex? Veniam numquam adipisci recusandae provident necessitatibus, quos, officiis illo temporibus excepturi, sunt porro laborum perferendis dolores nulla voluptatem quam et suscipit deleniti qui praesentium ipsam asperiores totam? Veritatis dolores, eveniet laborum repellendus eligendi, voluptate illo recusandae nulla aut excepturi ex architecto laudantium itaque odio impedit iste? Mollitia illo ratione explicabo nobis in sint perspiciatis sapiente iste ab! Rerum et minus nam repudiandae sunt, corrupti vero cumque veniam iusto suscipit nisi fugiat aspernatur ipsam consequatur voluptas, magnam natus ratione, quam tempora tenetur sed quidem? Accusantium fugiat dolores fugit qui corrupti. Sit voluptatum velit laborum nihil necessitatibus, voluptas, minima reiciendis fugit eos culpa neque tempora sint fuga? Placeat nemo minima voluptatem, officia cumque fugiat recusandae corrupti voluptate distinctio animi autem quod est dolorem odio veritatis eveniet, dolore consequuntur. Ullam nihil nobis molestias quam dolores illum suscipit sunt tenetur minus? Fuga repellat reiciendis deserunt alias quidem nihil ipsam nisi qui velit necessitatibus, distinctio minus, soluta numquam porro est vel dolore aliquid ullam provident! Itaque, ab, magni vero, similique cum iusto excepturi facilis dolorem laudantium voluptates architecto. Accusamus libero est necessitatibus repellendus, iusto harum aperiam hic tenetur. Quisquam non nulla provident facere hic iusto dolorum dignissimos, iure voluptate error fuga quia repudiandae quos similique. Excepturi alias nemo cumque vel nihil rem maxime doloribus perferendis assumenda aliquid laboriosam vitae expedita soluta molestiae tempora quos temporibus sunt, quis in, voluptas beatae eos culpa similique voluptatum! Deleniti, nulla. Quo laudantium corrupti tempore, optio neque impedit sint necessitatibus at iste ex a voluptatibus repellendus! Quos fuga aspernatur neque excepturi provident repudiandae fugiat tempora. Harum voluptatibus suscipit, quam explicabo dolor impedit adipisci fuga! Aspernatur optio numquam accusantium, nulla aliquam nihil provident illum nesciunt temporibus nobis id accusamus vitae deserunt eius qui maxime exercitationem vero odit dolorum labore repellat distinctio harum! Vel non consectetur quae possimus ab ut tenetur nobis laudantium nesciunt. Ab sint maiores, reprehenderit quas perferendis incidunt repellendus corporis doloribus deleniti modi? Provident id aspernatur doloremque perferendis numquam. Necessitatibus laborum fugit, nostrum corporis iusto autem asperiores perferendis tempore! Voluptas, quos dolorem, tempora sunt expedita perspiciatis fugit, quidem repudiandae assumenda dicta facere. Modi natus delectus eveniet eius tempora reprehenderit, quia porro dolor deserunt. Nesciunt, exercitationem at ratione fugit, reiciendis excepturi atque dolorem architecto nam repellat iste voluptatibus vel nihil laudantium fugiat. Sit magnam amet, suscipit qui nihil quos, pariatur recusandae facilis eos natus sequi! Quibusdam optio odit adipisci voluptatem impedit et recusandae aliquam, aliquid sint voluptas nesciunt rerum quidem esse distinctio, obcaecati dolorem illo quis delectus non veritatis labore iure quia corporis architecto! Ab sed provident optio placeat quas quasi reiciendis voluptatum ea, quis vero omnis nam voluptatibus ipsam. Omnis quis cumque exercitationem, saepe necessitatibus fugiat, laborum modi voluptatem, consequuntur voluptas tempore tenetur! Quisquam laudantium provident assumenda aspernatur, earum voluptatum temporibus. Laboriosam veritatis et eligendi ducimus iste aliquam soluta obcaecati molestias atque temporibus nostrum animi possimus dolorum dolore rem illum, autem debitis quia in quae! Sunt, nostrum dolore unde sequi enim delectus pariatur aliquam adipisci quis rem reiciendis fugit mollitia sit earum, provident maxime, recusandae exercitationem magnam at aspernatur? Dolorum ea sint obcaecati possimus perspiciatis hic corporis impedit, itaque quaerat facilis amet? Ducimus voluptatibus, iure natus non corrupti omnis voluptas libero unde expedita! Minus nihil labore sint maiores explicabo et facilis dolores veniam, quis ad temporibus culpa nostrum placeat cum quasi laborum architecto non!
+</p>
+</div>
+
+<div id="ore">
+<h3>Do you know Ore?</h3>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia excepturi quasi totam, molestiae accusantium laudantium obcaecati accusamus repellat culpa earum quas, id eaque sunt corporis harum cumque magni. Corrupti, quos odit excepturi hic numquam, nam perferendis temporibus repudiandae ex molestiae voluptas fugiat, ullam quasi saepe similique nostrum explicabo modi voluptate asperiores libero? Expedita facere neque incidunt ea, vitae veniam id voluptates cumque numquam, corporis officiis ipsam officia quas cum quaerat architecto laboriosam voluptatum voluptatem placeat amet unde corrupti possimus non vero. Dignissimos architecto molestiae, sapiente earum perspiciatis illum accusamus quam iste at optio soluta harum dolore quidem placeat alias a ea perferendis ad est fugiat. Hic quidem praesentium aperiam consequuntur nemo unde doloremque sunt, error id. Commodi tenetur explicabo repellat amet ducimus illum, nisi quos quaerat, facere necessitatibus ad autem soluta velit architecto. Est corrupti beatae, sint, ipsam saepe culpa, facilis nisi quia voluptatem veniam incidunt cumque iusto nesciunt. Debitis consectetur quod nisi eligendi? Molestiae culpa velit quo ratione dignissimos officia facilis eius voluptatum, sit quidem ducimus, impedit ipsa. Quos molestiae optio praesentium, hic consectetur reiciendis placeat amet repellendus repudiandae aperiam officia nam mollitia suscipit voluptatum at soluta error minima nostrum explicabo. Voluptas ipsam eos iure ducimus saepe ab at illo repudiandae ullam possimus nemo sit, molestiae quam dicta aliquam vitae quos. Repellat omnis dolorum repudiandae! Voluptatum quaerat eaque minima, temporibus itaque iusto eligendi officiis dolor quae soluta sed nostrum, corrupti sit maxime blanditiis recusandae, a alias praesentium ipsum rem distinctio. Aperiam quia nobis laboriosam aut fuga dignissimos, illum tempore architecto doloremque, temporibus a dolorem minus dolore facilis neque nemo minima possimus adipisci sed, ducimus nisi repellendus beatae. Numquam quae labore excepturi natus non optio ab tempore cum sed. Magni numquam iusto quod incidunt aliquam ex sint a? Sequi facilis quae, doloremque laborum repellendus incidunt. Ad recusandae laborum id facilis quam temporibus aperiam corrupti eius quae consequatur unde pariatur blanditiis, odit consectetur adipisci praesentium esse saepe eos ipsum ut, quas quos suscipit laboriosam vel? Consectetur eius, itaque optio odit sint molestiae quis officia ipsam voluptas expedita, quos eveniet nisi, consequatur soluta laborum vel pariatur rerum rem atque? Quod dolor voluptatibus possimus laudantium, dolorem asperiores ratione doloribus iure, molestiae pariatur eveniet voluptate. Voluptate quia, quisquam quos at, cum tenetur nostrum dignissimos rerum obcaecati in dicta necessitatibus asperiores architecto ad ipsam facere aliquid repellendus cumque. Nisi facilis repellat necessitatibus quisquam veritatis reprehenderit, explicabo possimus esse praesentium maxime alias obcaecati tempora fuga. Quis, voluptatum expedita corporis perspiciatis ipsam laboriosam, quibusdam repellat voluptates fugit animi harum exercitationem non maxime itaque dolor! Assumenda eveniet laboriosam explicabo aperiam accusantium magnam similique quidem illum odio soluta perferendis quasi dolore dolor atque et ab quod repudiandae, ipsa labore corporis facere dolorem enim! Reiciendis eius, ratione quia debitis dolorem magni ea vero repudiandae nihil at molestiae libero eligendi non, aspernatur voluptas culpa! Magni rerum eos pariatur cupiditate, nulla illo vero. Et inventore non corrupti, soluta magni ad quasi, commodi magnam, molestiae consectetur minus sapiente ab maiores nesciunt. Enim laudantium soluta ipsam voluptas ea nemo, voluptatum in vero repellendus odio amet magni nisi praesentium pariatur distinctio quasi eveniet illo. Ea veniam, ut impedit numquam cum repudiandae fugiat molestias vitae eligendi? Similique nam, obcaecati beatae quaerat excepturi corrupti officia vitae quod sequi eius, quos quae doloribus, consequuntur placeat illum assumenda voluptas cupiditate quas vel. Placeat animi perferendis delectus maxime eaque asperiores nulla similique dignissimos nostrum dolores nihil vel, soluta iste dolorem non suscipit est laudantium facere officiis dolore iusto illum quos necessitatibus. Repellendus repellat, impedit iusto quae enim, numquam nulla dolor, nemo placeat quo magni nisi excepturi? Repellat odio minus voluptates omnis rerum. Esse rem officiis praesentium! Sint quis eius delectus quasi exercitationem. Delectus atque harum alias porro velit illo amet sunt cum unde in similique, rerum expedita vel error assumenda earum! Itaque modi nisi nihil fuga consectetur iste non aliquam consequuntur totam, enim reiciendis reprehenderit aperiam iusto, exercitationem minima deleniti cum odio quidem odit ad, vel saepe. Rerum alias qui a, amet odio ipsum repudiandae at dolores repellat adipisci omnis et esse quae ea nihil autem veniam corporis quaerat impedit molestiae iure quod. Suscipit a voluptatibus quibusdam error ut perferendis soluta. Sint cupiditate harum reprehenderit qui, quibusdam omnis aliquam quasi vero. Eaque, qui aliquam delectus error nam sed obcaecati dolore voluptatum doloremque quisquam minus temporibus laboriosam ullam cumque dicta ab fuga quae deleniti, perferendis, accusamus quam. Labore rerum animi deserunt quos recusandae voluptates aliquam quibusdam pariatur minima nulla, similique, quaerat inventore laborum, voluptatem unde adipisci excepturi et voluptas sint fugit quod. Quis labore facilis ut ea? Aut sequi itaque dolorem tempora? Perspiciatis molestias eius nobis incidunt unde quod, nesciunt rem ratione maxime doloribus quos ullam eveniet expedita molestiae inventore totam accusantium libero vero nulla alias. Ut culpa sapiente omnis earum fugit illo corrupti deserunt aliquam odio, adipisci quas cupiditate qui asperiores ratione? Omnis blanditiis nesciunt explicabo dolorum ad, ipsum magni aut pariatur possimus ut corrupti provident temporibus iusto reprehenderit veniam eveniet odit earum aspernatur? Id alias reiciendis adipisci, mollitia repellat, ipsam sapiente cum similique sint facilis vel fugit totam dolore optio eaque nam possimus qui inventore corrupti fugiat sit quas laudantium libero distinctio. Ad cupiditate vitae, velit dolorem voluptatem pariatur eaque fugit nulla facere totam! Quae nemo accusantium eaque molestias esse similique quaerat, dicta iste cum, earum, sapiente saepe vel voluptatum cupiditate aut dolore illo eveniet quibusdam sequi doloremque ut amet error doloribus! Enim, consequuntur? Totam, hic id! Modi tenetur at quam totam voluptas, fugiat obcaecati exercitationem veniam mollitia iusto eius nulla molestias consectetur quaerat voluptates iste! Laboriosam voluptatum officia aliquid minima numquam, placeat quidem, nihil consectetur id quibusdam eos recusandae aut dolorum distinctio reiciendis ut! Maxime saepe corrupti odio architecto possimus quasi, veniam quod molestias consectetur nemo. Beatae corporis qui sapiente reprehenderit quos minima tempora deleniti accusantium vel voluptatibus cumque ipsam, minus unde aliquid nemo neque quis facilis exercitationem ullam vero. Sed optio itaque temporibus deserunt porro at delectus harum culpa cumque, distinctio, odio, ullam ducimus velit! Minus autem similique atque unde earum possimus recusandae corrupti ab sunt laborum quod assumenda, in aut hic culpa eos, quibusdam vitae repudiandae fugiat. Fugit sequi rem odio nulla repellat assumenda reprehenderit, quasi quia laboriosam consequatur ratione, omnis, consequuntur ex quos dolores animi laudantium inventore in natus hic placeat sint et ipsa. Adipisci, quam velit sit temporibus voluptatibus animi et ullam ipsa delectus non! Dicta, similique consectetur impedit animi eum incidunt ipsa. Nostrum optio impedit, vel perspiciatis corporis culpa, natus dolorum quia iure dolore commodi, in ipsam iusto officia! Dolorum, vero fuga eaque earum obcaecati architecto odit! Alias, voluptatibus aut pariatur, consequuntur nisi ipsam quos voluptates, labore eius culpa at fugiat? Ad ipsam fugit doloremque consequatur eveniet eius quibusdam ex earum labore tempora eum, assumenda accusamus ipsa? Et ratione maiores sequi distinctio vel mollitia, dolor dolorem alias quam rem pariatur. Sequi similique numquam modi. Iste quaerat tempora nam quis cupiditate, asperiores animi ratione quos corporis dolorem placeat mollitia earum maxime incidunt laudantium aperiam ad recusandae similique vitae eius corrupti laboriosam. Quisquam aperiam sed repellat incidunt molestias sequi quos hic, in voluptate commodi veniam a necessitatibus magni inventore, at ducimus assumenda beatae blanditiis officiis illum. Est aperiam quam amet quasi sapiente, eveniet expedita id vitae veniam rem consequuntur nobis asperiores impedit optio ad iure labore. Nesciunt neque quaerat quasi. Provident ut consectetur est quia quis veritatis magnam ipsam molestiae commodi porro eos non praesentium nemo minus earum deleniti modi aliquam, excepturi quas fugiat id laborum unde officia. Accusantium cupiditate quidem animi minima veniam error blanditiis officia incidunt placeat porro nemo dignissimos ullam in perferendis consectetur nihil minus, inventore laudantium quisquam temporibus possimus impedit. Distinctio deleniti voluptatibus suscipit necessitatibus! Odit consectetur porro commodi impedit delectus consequuntur distinctio fugiat praesentium, enim officia accusamus, deleniti animi quo vero? Possimus, quod! Nesciunt facilis labore dolor sed, iusto perferendis quaerat molestiae facere magni ad, voluptas commodi quis. Voluptatibus, mollitia! Numquam saepe sint minus sed provident! Dicta aperiam, quo odio impedit numquam incidunt suscipit porro enim dolor tempore necessitatibus iste quia nesciunt adipisci amet quod. Corporis blanditiis nostrum eaque non vitae voluptatem explicabo nisi exercitationem est laborum sit, cumque beatae facilis dignissimos ab. Totam, nobis sequi dolorem aperiam illum soluta amet reiciendis distinctio iure sint quae dolor quis cupiditate, hic accusantium harum labore nemo impedit debitis alias, tempore dolorum cumque iste itaque? Dolores quas non ullam tempora quasi nostrum esse excepturi. Labore blanditiis incidunt assumenda velit eveniet enim distinctio optio voluptas exercitationem quibusdam! Nemo delectus optio consequuntur repellendus quibusdam dolor, quisquam exercitationem! Amet, quibusdam dolorem, dolorum temporibus rem excepturi facere, dignissimos consectetur eius dolores neque autem. Nobis doloribus dicta, inventore, rem sapiente dignissimos odio ut ipsum vero officia provident cupiditate quas et porro! Alias, excepturi dolorum. Blanditiis, quisquam quasi inventore dolore architecto, earum adipisci perspiciatis ad aliquam impedit pariatur accusantium. Soluta officia, facilis temporibus minus odio placeat nesciunt accusantium asperiores ea earum tenetur facere? Nisi enim rerum neque laborum quo ipsum molestiae explicabo voluptatem dicta facere quam officia consequuntur sint recusandae eaque odit, voluptatum nemo cum natus veniam blanditiis. Quisquam, laborum unde, distinctio facilis molestias atque obcaecati ex ratione laudantium itaque aspernatur numquam est accusantium magni. Explicabo officiis quasi natus ex fugiat, voluptate vel ducimus quos maxime quis. Atque, aliquam nulla quo expedita et cum illo quaerat accusamus in eveniet adipisci nam excepturi ducimus, labore provident aperiam? Magni corrupti perferendis expedita cumque minus, rem id deleniti soluta a repellendus facilis quisquam natus aperiam veritatis veniam voluptatibus. Error non perspiciatis laborum dolor corrupti quibusdam vel, asperiores culpa vero atque consequuntur doloremque minus velit repellat in nihil hic possimus. Voluptates facilis recusandae ipsum quae! Quidem odit blanditiis iure asperiores sit vero officia veniam, eaque laborum incidunt! Beatae itaque facilis aperiam dolorem? Animi, ipsam. Aliquam corporis atque amet, quaerat fugit deleniti ipsa voluptates omnis voluptas nihil excepturi dicta odit. Optio quia dolore nam cumque nesciunt at aliquid eveniet iste reiciendis ut iure, eum doloremque harum enim nihil unde quod recusandae repudiandae illum explicabo autem esse! Quidem aspernatur ut est harum. Porro quo nam maxime optio repellat debitis, vitae labore ipsam quis in eos nulla tempore aliquam consequatur, quae quos sit, dolore magni culpa vero incidunt libero temporibus beatae. Exercitationem molestiae beatae enim fuga libero! Odio, quisquam dolorum. Corrupti repellat exercitationem blanditiis ea quaerat non ab accusantium. Cum molestias tenetur rem dolorem, corrupti magnam quibusdam beatae ea aliquam, unde dolore saepe facere in est commodi dignissimos officiis quis. Dolorum officiis nam fugit enim dicta error quia eum, tenetur perspiciatis corrupti iste aut hic sit cupiditate quo minus temporibus perferendis, sint ratione deleniti odit suscipit nobis fuga! Laborum eum, quisquam inventore vero ex ad a atque placeat quis libero architecto praesentium. Rem, consequatur. Optio pariatur esse aut ad provident et beatae nostrum repellat. Doloribus consectetur reiciendis minus inventore quos incidunt, id enim, natus perspiciatis nisi odit laudantium dolorum culpa neque architecto! Laborum natus animi omnis voluptatum id, impedit, sapiente harum sunt distinctio quasi deserunt dolor commodi reiciendis error. Optio, earum id! Doloribus fuga laboriosam odio dolores repellat nulla, praesentium dolorum sint quidem ut autem sapiente. Neque in, alias dignissimos dolorem tenetur quae delectus dicta autem ea odio veritatis ut aut sunt magnam vero, natus consequuntur, excepturi similique rerum corporis. In rerum sunt facilis provident, eos similique consequatur fugit. Tenetur, perferendis. Asperiores, suscipit? Atque provident autem in aperiam laboriosam minima vero aliquam rerum assumenda sed nobis nesciunt eligendi maiores omnis nam, exercitationem quia cupiditate harum voluptatum necessitatibus. Itaque, unde voluptas omnis sit, minus obcaecati molestiae ullam, accusantium ipsam debitis magnam? Ducimus, hic suscipit. Ab voluptate possimus optio ipsa ipsum architecto excepturi delectus magnam ipsam aut assumenda eveniet modi perferendis odio beatae aperiam, tempore quas? Qui, deserunt quae sapiente natus placeat alias quaerat non ea saepe magnam earum nam autem nulla, consequuntur ipsum facere esse dicta? Quis nostrum at sit ducimus dolores eligendi iste dolorum architecto ullam molestias exercitationem rem amet numquam delectus autem laboriosam, dolor aspernatur nemo molestiae labore quam unde eaque sunt ad. Nihil maiores eveniet ab ad accusamus consectetur iusto. Quidem odio nesciunt sequi, deleniti perferendis dicta obcaecati laborum delectus quasi ad ipsum illo officiis molestias optio porro non eaque totam sit facilis quos magnam officia error quia! Alias exercitationem illum iure inventore!
+</p>
+</div>
+
+<!-- link to the divs within the webpage.
+ We use # character to indicate link-->
+ <a href="#ib">Go to IB's Profile</a>
+ <a href="#dami">Check Dami's story</a>
+
+Simple Class Task
+
+Create an HTML page that contains:
+
+An ordered list of five students’ names.
+An unordered list of five favourite foods.
+An ordered list that starts from number 10.
+An ordered list that counts backwards from 5.
+A link to the Tech Studio Academy website that opens in a new tab.
+A link to another page in your project called about.html. 
+
+Home Task: Create a Student Directory Website
+
+Create a simple two-page website that demonstrates your understanding of HTML lists, attributes, and anchor tags.
+
+Page 1: index.html
+Add a heading titled Full-Stack Development Students.
+Create an ordered list containing the names of at least eight students.
+Make the numbering begin from 5 using the start attribute.
+Create another ordered list showing your five favourite programming languages.
+Make the list count backwards from 5 using the reversed attribute.
+Create an unordered list containing at least five topics you want to learn.
+Add an external link to the Tech Studio Academy website.
+Make the external link open in a new browser tab.
+Add an internal link labelled Contact Us, which leads to contact.html.
+Page 2: contact.html
+Add a heading titled Contact Us.
+Create an unordered list containing:
+Email address
+Phone number
+Office location
+Add an internal link labelled Back to Home, which returns to index.html.
+
+2ND SEPTEMBER 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- IMAGE TAGS -->
+     <!-- The `<img>` tag in HTML is used to embed images into a webpage. It is an empty tag, meaning it doesn't have a closing tag. The primary attributes used with the `<img>` tag are `src` (source) and `alt` (alternative text).
+   basic syntax
+<img src="image source(where the image coming from)" alt="description of the image"> -->
+
+<!-- 1. Displaying Images from an Online Source:**
+   **Purpose**: To display an image that is hosted online, available via a URL. -->
+<img src="https://ichef.bbci.co.uk/ace/standard/624/cpsprodpb/2acf/live/263ce210-91ad-11f1-9c12-47c0acd34ba6.jpg.webp" alt="chelsea-players" title="jackson-and-delap" width="300" height="150">
+
+2. Displaying Images from Your Local Device (Project Directory)
+<img src="./birdie.jpeg" alt="bird" title="birdie" width="400" height="200">
+
+<!-- TAKE NOTE: The title, width and height are additional attributes. `width` and `height`**: Define the size of the image in pixels. `title` provides additional information when the user hovers over the image. -->
+
+
+<!-- video tag -->
+ <!-- <video>: Embeds a video in the document.
+      syntax
+      <video controls>
+    <source src="source of the video">
+   </video> -->
+
+<!-- <video controls>
+<source src="./Bukola Olafenwa Personal Task Manager .mov">
+</video> -->
+ 
+<!-- audio tag -->
+ <!-- <audio>: Embeds audio content.
+  syntax
+   <audio controls>
+    <source src="source of the audio">
+   </audio> -->
+
+   <!-- <audio controls>
+    <source src="./MU_-_You_ve_Been_Here_Before_(mp3.pm).mp3">
+   </audio> -->
+
+MORE ON THE DIV TAG<div> Tag
+The <div> tag is a general-purpose HTML container used to group related elements together.
+div means division.
+It does not describe the meaning of the content. It simply divides a webpage into groups or sections, which can then be organised or styled with CSS.
+
+
+<!-- Form Tag and Input Types in HTML -->
+An HTML form collects information from users. Forms are used for registration, login, contact messages, searches, surveys among others. The `<form>` tag in HTML is used to create the forms for collecting user input. The form element acts as a container for various input elements, like text fields, checkboxes, radio buttons, and buttons. These input elements allow users to enter data, which can then be sent to a server for processing. 
+  <!-- basic structure of a form -->
+   <!-- <form action="" method="post">
+    <input type="text">
+   </form> -->
+   <!-- - **`action`**: Specifies the URL where the form data should be sent when the form is submitted.
+- **`method`**: Specifies the HTTP method used to send the data (`GET` or `POST`). -->
+
+
+<!-- One basic form concept is FORM CONTROLS. 
+ Form Controls in HTML
+Form controls are the interactive elements inside a form that allow users to enter, select, change or submit information.
+
+Examples include:
+
+Text fields
+Password fields
+Email fields
+Radio buttons
+Checkboxes
+Dropdown lists
+Textareas
+Buttons -->
+
+
+<!-- | Form control              | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| `<input type="text">`     | Enters a single line of text               |
+| `<input type="password">` | Enters a masked password                   |
+| `<input type="email">`    | Enters an email address                    |
+| `<input type="number">`   | Enters a numerical value                   |
+| `<input type="date">`     | Selects a date                             |
+| `<input type="tel">`      | Enters a telephone number                  |
+| `<input type="radio">`    | Selects one option from a group            |
+| `<input type="checkbox">` | Selects zero, one or multiple options      |
+| `<select>`                | Selects an option from a dropdown list     |
+| `<textarea>`              | Enters multiple lines of text              |
+| `<button>`                | Submits, resets or performs another action | -->
+<!-- 
+KEY IDEA: The `<input>` tag is versatile and can represent various types of form controls based on the `type` attribute. For example, `<input type="text">` creates a text field, while `<input type="checkbox">` creates a checkbox.
+
+NOTE: A <label> is associated with a form control, but it is not generally considered a control because the user does not enter data into it. It mainly explains what information the control expects. -->
+
+<br>
+<!-- INPUT TYPES/EXAMPLES -->
+ <!-- 1. Text Input: <input type="text"> 
+    - **Purpose**: Allows users to enter a single line of text. -->
+    <label for="name">Name</label>
+<input type="text" id="name" name="name" />
+<br>
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="firstName" placeholder="Enter your first name"/>
+<br>
+<label for="surname">Surname</label>
+<input type="text" id="surname" name="surname" placeholder="Enter your surname"/>
+<br>
+<!-- 2. Password Input: <input type="password">  
+       - **Purpose**: Allows users to enter a password, with the characters masked.  -->
+<label for="password">Password</label>
+<input type="password" id="password" name="password">
+<br>
+
+<!-- 3. Email Input:  <input type="email">
+          - **Purpose**: Allows users to enter an email address. -->
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="example@gmail.com">
+<br>
+<!-- 4. Number Input: <input type="number"> 
+     - **Purpose**: Allows users to enter a numerical value -->
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" min="10" max="45">
+<br>
+<!-- 5. Date Input: <input type="date">
+    Purpose**: Allows users to select a date. -->
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob" >
+
+<!-- tel input -->
+<!-- Purpose: Allows users to enter a telephone number.
+      Collect a telephone number from the user.
+Display a telephone-friendly keypad on many mobile devices.
+Allow telephone-number characters such as +, spaces and hyphens. -->
+<br>
+<label for="phone">Telephone</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{11}">
+
+
+<!-- 6. Radio Buttons: <input type="radio">
+      - **Purpose**: Allows users to select one option from a set of predefined options. -->
+<br>
+<label for="gender">Gender</label>
+<br>
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female">
+
+
+<!-- 7. Checkboxes:  <input type="checkbox">
+ - Purpose**: Allows users to select one or more options from a set. -->
+
+<label for="hobbies">Hobbies</label>
+<br>
+
+<label for="sports">Sports</label>
+<input type="checkbox" id="sports" name="hobbies" value="sports">
+
+<label for="drawing">Drawing</label>
+<input type="checkbox" id="drawing" name="hobbies" value="drawing">
+
+<label for="coding">Coding</label>
+<input type="checkbox" id="coding" name="hobbies" value="coding">
+
+<label for="jogging">Jogging</label>
+<input type="checkbox" id="jogging" name="hobbies" value="jogging">
+
+<label for="skipping">Skipping</label>
+<input type="checkbox" id="skipping" name="hobbies" value="skipping">
+
+<label for="swimming">Swimming</label>
+<input type="checkbox" id="swimming" name="hobbies" value="swimming">
+</body>
+</html>
+<br>
+<!-- 9. Select Dropdown  <select>
+      - Purpose**: Allows users to select one option from a dropdown list.
+Example: -->
+<label for="state">Select State</label>
+<select name="state" id="state">
+    <option value="ogun">Ogun State</option>
+    <option value="lag">Lagos State</option>
+    <option value="imo">Imo State</option>
+    <option value="anam">Anambra State</option>
+    <option value="oyo">Oyo State</option>
+    <option value="uyo">Akwa Ibom State</option>
+    <option value="cro">Cross River State</option>
+    <option value="osun">Osun State</option>
+    <option value="ondo">ondo State</option>
+    <option value="edo">Edo State</option>
+    <option value="kwa">Kwara State</option>
+    <option value="dam">Damaturu State</option>
+</select>
+
+UPDATED 2ND SEPTEMBER 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- IMAGE TAGS -->
+     <!-- The `<img>` tag in HTML is used to embed images into a webpage. It is an empty tag, meaning it doesn't have a closing tag. The primary attributes used with the `<img>` tag are `src` (source) and `alt` (alternative text).
+   basic syntax
+<img src="image source(where the image coming from)" alt="description of the image"> -->
+
+<!-- 1. Displaying Images from an Online Source:**
+   **Purpose**: To display an image that is hosted online, available via a URL. -->
+<img src="https://ichef.bbci.co.uk/ace/standard/624/cpsprodpb/2acf/live/263ce210-91ad-11f1-9c12-47c0acd34ba6.jpg.webp" alt="chelsea-players" title="jackson-and-delap" width="300" height="150">
+
+2. Displaying Images from Your Local Device (Project Directory)
+<img src="./birdie.jpeg" alt="bird" title="birdie" width="400" height="200">
+
+<!-- TAKE NOTE: The title, width and height are additional attributes. `width` and `height`**: Define the size of the image in pixels. `title` provides additional information when the user hovers over the image. -->
+
+
+<!-- video tag -->
+ <!-- <video>: Embeds a video in the document.
+      syntax
+      <video controls>
+    <source src="source of the video">
+   </video> -->
+
+<!-- <video controls>
+<source src="./Bukola Olafenwa Personal Task Manager .mov">
+</video> -->
+ 
+<!-- audio tag -->
+ <!-- <audio>: Embeds audio content.
+  syntax
+   <audio controls>
+    <source src="source of the audio">
+   </audio> -->
+
+   <!-- <audio controls>
+    <source src="./MU_-_You_ve_Been_Here_Before_(mp3.pm).mp3">
+   </audio> -->
+
+MORE ON THE DIV TAG<div> Tag
+The <div> tag is a general-purpose HTML container used to group related elements together.
+div means division.
+It does not describe the meaning of the content. It simply divides a webpage into groups or sections, which can then be organised or styled with CSS.
+
+
+<!-- Form Tag and Input Types in HTML -->
+<!-- An HTML form collects information from users. Forms are used for registration, login, contact messages, searches, surveys among others. The `<form>` tag in HTML is used to create the forms for collecting user input. The form element acts as a container for various input elements, like text fields, checkboxes, radio buttons, and buttons. These input elements allow users to enter data, which can then be sent to a server for processing.  -->
+  <!-- basic structure of a form -->
+   <!-- <form action="" method="post">
+    <input type="text">
+   </form> -->
+   <!-- - **`action`**: Specifies the URL where the form data should be sent when the form is submitted.
+- **`method`**: Specifies the HTTP method used to send the data (`GET` or `POST`). -->
+
+
+<!-- One basic form concept is FORM CONTROLS. 
+ Form Controls in HTML
+Form controls are the interactive elements inside a form that allow users to enter, select, change or submit information.
+
+Examples include:
+
+Text fields
+Password fields
+Email fields
+Radio buttons
+Checkboxes
+Dropdown lists
+Textareas
+Buttons -->
+
+
+<!-- | Form control              | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| `<input type="text">`     | Enters a single line of text               |
+| `<input type="password">` | Enters a masked password                   |
+| `<input type="email">`    | Enters an email address                    |
+| `<input type="number">`   | Enters a numerical value                   |
+| `<input type="date">`     | Selects a date                             |
+| `<input type="tel">`      | Enters a telephone number                  |
+| `<input type="radio">`    | Selects one option from a group            |
+| `<input type="checkbox">` | Selects zero, one or multiple options      |
+| `<select>`                | Selects an option from a dropdown list     |
+| `<textarea>`              | Enters multiple lines of text              |
+| `<button>`                | Submits, resets or performs another action | -->
+<!-- 
+KEY IDEA: The `<input>` tag is versatile and can represent various types of form controls based on the `type` attribute. For example, `<input type="text">` creates a text field, while `<input type="checkbox">` creates a checkbox.
+
+NOTE: A <label> is associated with a form control, but it is not generally considered a control because the user does not enter data into it. It mainly explains what information the control expects. -->
+
+<br> <br>
+<!-- INPUT TYPES/EXAMPLES -->
+ <!-- 1. Text Input: <input type="text"> 
+    - **Purpose**: Allows users to enter a single line of text. -->
+    <label for="name">Name</label>
+<input type="text" id="name" name="name" />
+<br> <br>
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="firstName" placeholder="Enter your first name"/>
+<br> <br>
+<label for="surname">Surname</label>
+<input type="text" id="surname" name="surname" placeholder="Enter your surname"/>
+<br> <br>
+<!-- 2. Password Input: <input type="password">  
+       - **Purpose**: Allows users to enter a password, with the characters masked.  -->
+<label for="password">Password</label>
+<input type="password" id="password" name="password">
+<br> <br>
+
+<!-- 3. Email Input:  <input type="email">
+          - **Purpose**: Allows users to enter an email address. -->
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="example@gmail.com">
+<br> <br>
+<!-- 4. Number Input: <input type="number"> 
+     - **Purpose**: Allows users to enter a numerical value -->
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" min="10" max="45">
+<br> <br>
+<!-- 5. Date Input: <input type="date">
+    Purpose**: Allows users to select a date. -->
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob" >
+
+<!-- tel input -->
+<!-- Purpose: Allows users to enter a telephone number.
+      Collect a telephone number from the user.
+Display a telephone-friendly keypad on many mobile devices.
+Allow telephone-number characters such as +, spaces and hyphens. -->
+<br> <br>
+<label for="phone">Telephone</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{11}">
+
+
+<!-- 6. Radio Buttons: <input type="radio">
+      - **Purpose**: Allows users to select one option from a set of predefined options. -->
+<br> <br>
+<label for="gender">Gender</label>
+<br>
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female">
+
+<br> <br>
+<!-- 7. Checkboxes:  <input type="checkbox">
+ - Purpose**: Allows users to select one or more options from a set. -->
+
+<label for="hobbies">Hobbies</label>
+<br> <br>
+
+<label for="sports">Sports</label>
+<input type="checkbox" id="sports" name="hobbies" value="sports">
+
+<label for="drawing">Drawing</label>
+<input type="checkbox" id="drawing" name="hobbies" value="drawing">
+
+<label for="coding">Coding</label>
+<input type="checkbox" id="coding" name="hobbies" value="coding">
+
+<label for="jogging">Jogging</label>
+<input type="checkbox" id="jogging" name="hobbies" value="jogging">
+
+<label for="skipping">Skipping</label>
+<input type="checkbox" id="skipping" name="hobbies" value="skipping">
+
+<label for="swimming">Swimming</label>
+<input type="checkbox" id="swimming" name="hobbies" value="swimming">
+
+<br> <br>
+<!-- 8. Select Dropdown  <select>
+      - Purpose**: Allows users to select one option from a dropdown list.
+      <option>`**: Represents each option within the dropdown.
+`value`**: The value sent to the server when an option is selected. -->
+<!-- Example: -->
+<label for="state">Select State</label>
+<select name="state" id="state">
+    <option value="sel">--- select state---</option>
+    <option value="ogun">Ogun State</option>
+    <option value="lag">Lagos State</option>
+    <option value="imo">Imo State</option>
+    <option value="anam">Anambra State</option>
+    <option value="oyo">Oyo State</option>
+    <option value="uyo">Akwa Ibom State</option>
+    <option value="cro">Cross River State</option>
+    <option value="osun">Osun State</option>
+    <option value="ondo">ondo State</option>
+    <option value="edo">Edo State</option>
+    <option value="kwa">Kwara State</option>
+    <option value="dam">Damaturu State</option>
+</select>
+
+<!-- 9. Text Area: <textarea> 
+    - Purpose**: Allows users to enter multiple lines of text.
+Example:  -->
+<br> <br>
+<label for="message">Message</label>
+<textarea name="message" id="message" rows="5" cols="50" placeholder="Enter your message here...">
+
+</textarea>
+<br> <br>
+<!-- 10. button: <button></button>
+   - Purpose**: Creates a clickable button. It can be used to submit a form or trigger JavaScript functions. We are focusing on submitting/resetting a form for now.
+Example -->
+<button type="submit">Submit</button>
+<br> <br>
+<button type="reset">Reset</button>
+<br> <br>
+<button type="submit" onclick="alert('button clicked')">Click me</button>
+</body>
+</html>
+Note: index.html should remain the home page, while the new page should be named message.html. You should not create another file called index.html for the message page inside the same folder, because two files in one folder cannot have the same name.
+<!-- A SIMPLE FORM CONTAINING THREE INPUT FIELDS -->
+
+<form>
+<h1>
+Message Corner
+</h1>
+<br> <br>
+<label for="email">Email</label>
+<input type="email" id="email" name="email">
+<br> <br>
+<label for="password">Password</label>
+<input type="password" id="password" name="password">
+<br> <br>
+<button type="submit">Submit</button>
+
+</form>
+REMINDER: ABOUT FORM TAGS
+Importance of the <form> Tag
+
+The <form> tag is used to group form controls such as input fields, dropdowns, text areas, and buttons. It allows users to enter and submit information, such as registration details, login credentials, feedback, or messages.
+
+What happens when you create a form without the form tag?
+If you create input fields and buttons without a <form> tag, they will still appear on the webpage, and users can type into them. However, they are not grouped as one form and will not be submitted automatically when a submit button is clicked.
+
+For example:
+<input type="text" placeholder="Enter your name">
+<input type="email" placeholder="Enter your email">
+<button type="submit">Submit</button>
+
+The fields will work individually, but clicking Submit will not send their information anywhere.
+
+The <form> tag connects the controls and provides submission instructions.
+
+TAKE NOTE OF THIS:
+At this stage, you can use the <form> tag without action or method. 
+This example below without action or method is acceptable: 
+<form>
+    <label for="fullName">Full name:</label>
+    <input type="text" id="fullName" name="fullName">
+
+    <button type="submit">Submit</button>
+</form>
+
+The <form> tag is still useful without the action or post because it:
+
+Groups related form controls together.
+
+Gives the page a meaningful HTML structure.
+
+Enables built-in HTML validation, such as required, minlength, and type="email".
+
+Allows the Enter key to submit the form.
+
+Since there is no JavaScript or backend to process the information, submitting it will normally reload the current page. For now, the lesson can focus on creating and validating the form correctly.
+Home Task: Event Registration Form
+
+PART ONECreate an HTML page (event-registration.html) containing an Event Registration Form.
+
+The form should include:
+
+A heading: Event Registration Form
+
+Full name — text input
+
+Email address — email input
+
+Phone number — telephone input
+
+Date of birth — date input
+
+Preferred event date — date input
+
+Ticket type — dropdown list with: 
+Regular
+
+VIP
+
+Premium
+
+
+Attendance method — radio buttons: 
+Physical
+
+Virtual
+
+
+Areas of interest — at least three checkboxes
+
+Additional information — textarea with rows="6" and cols="40"
+
+Submit and reset buttons
+
+
+PART TWO
+Using your existing Home page and the new Event Registration page:
+
+Add a link to your Home page that takes users to the Event Registration page.
+
+Add a link to the Event Registration page that takes users back to the Home page.
+
+In doing so, you should be able to move from the Home page to the Event Registration page and back again.
+
+
+UPDATED NOTE: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+   <!--FORM VALIDATION  -->
+<!-- Form validation is the process of checking user input in a form to make sure the data is correct, complete, and safe before it is submitted or processed.
+
+TYPES OF VALIDATION:
+1. Client-side validation: happens in the user’s browser; it provides quick feedback. An example is the HTML Form validation.
+
+2. Server-side validation: happens on the backend; it protects the application because browser validation can be bypassed. You would learn about this much later in the course.
+
+*OUR FOCUS WILL BE ON CLIENT-SIDE HTML VALIDATION
+
+
+PRIOR KNOWLEDGE
+Let us recall what we already know. An HTML form collects information from users through elements such as inputs, labels and buttons.”   -->
+
+
+<!-- SAMPLE FORM -->
+  <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+ </head>
+ <body>
+    <h2>Student Registration</h2>
+
+   <form action=""#>
+
+    <!-- FULLNAME -->
+     <label for="fullName">Full Name</label>
+
+     <input
+     type="text"
+     id="fullName"
+     name="fullName"
+     placeholder="Enter your full name"
+     required
+     >
+
+     <!-- NOTE: PLACEHOLDER IS A PROTOTYPE/EXAPLE FORMAT OF WHAT IS EXPECTED OF THE USER TO ENTER IN AN INPUT FIELD. -->
+    <!-- EMAIL -->
+     <label for="email">Email</label>
+
+     <input
+     type="email"
+     id="email"
+     name="email"
+     placeholder="example@gmail.com"
+     required
+     >
+
+    <!-- Password -->
+     <label for="password">Password</label>
+
+     <input
+     type="password"
+     id="password"
+     name="password"
+     minlength="8"
+     maxlength="20"
+     required
+    >
+
+    <!-- Age -->
+     <label for="age">Age</label>
+
+     <input 
+     type="number"
+     id="age"
+     name="age"
+     min="13"
+     max="50"
+     required
+     >
+
+   <!-- Phone  -->
+<label for="phone">Telephone</label>
+<input type="tel" id="phone"  name="phone" pattern="[0-9]{11}" placeholder="08012345678" required>  
+
+<!-- BUTTON -->
+    <button type="submit">Submit</button>
+
+   </form>
+ </body>
+ </html>
+
+
+ <!-- PROBLEM -->
+  <!-- Can we spot the problem - -->
+  <!-- GATEKEEPER ANALOGY FOR FORM VALIDATION-->
+   <!-- A plain form without validation is like a beautiful house in a compound with an unmanned gate. Anyone or anything can access it. The potential intruders/risks include empty, incomplete, incorect, and/or unreliable data. -->
+
+   <!-- COMMON FORM VALIDATION -->
+<!-- REQUIRED ATTRIBUTE --> 
+ <!-- Prevents the submission of an empty input field. -->
+<!-- Example:
+     <input
+     type="password"
+     id="password"
+     name="password"
+     required
+    >  -->
+
+<!-- TYPE ATTRIBUTE -->
+<!-- It prevents the submission of inappropriate data type for an input field.
+Example:
+     <input
+     type="email"
+     id="email"
+     name="email"
+     placeholder="example@gmail.com"
+     required
+     > -->
+
+<!-- MIN and MAX ATRIBUTES-->
+<!-- Set the minimum and maximum numerical worth user can enter into an input field. -->
+<!-- Example:
+  <input 
+     type="number"
+     id="age"
+     name="age"
+     min="13"
+     max="50"
+     > -->
+
+
+<!-- MINLENGTH AND MAXLENGTH ATTRIBUTES -->
+<!-- Set minimum and maximum character count.
+Example: -->
+<!-- <input
+     type="password"
+     id="password"
+     name="password"
+     minlength="8"
+     maxlength="20"
+     required
+    > -->
+
+<!-- PATTERN ATTRIBUTE -->
+ <!-- The pattern attribute in HTML is used to specify a regular expression that an <input> element's value must match to be considered valid. It provides a built-in, client-side way to enforce specific data formats, such as phone numbers, postal codes, or strong passwords, before the form is submitted.  -->
+<!-- Example:  -->
+<!-- <label for="phone">Telephone</label>
+<input type="tel" id="phone"  name="phone" pattern="[0-9]{11}"> -->
+</body>
+</html>
+
+Apply Form Validation
+Class Task
+Apply HTML validation to the fEvent Registration Form on your event-registration.html page.
+
+Your form should meet the following requirements:
+
+All the fields must be completed using the required attribute.
+The full name must contain at least 3 characters and no more than 20 characters.
+The email field must accept a valid email address.
+The phone number must contain exactly 11 digits.
+The message must contain at least 10 characters and no more than 200 characters.
+Add suitable placeholder text to applicable field(s).
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+   <!--FORM VALIDATION  -->
+<!-- Form validation is the process of checking user input in a form to make sure the data is correct, complete, and safe before it is submitted or processed.
+
+TYPES OF VALIDATION:
+1. Client-side validation: happens in the user’s browser; it provides quick feedback. An example is the HTML Form validation.
+
+2. Server-side validation: happens on the backend; it protects the application because browser validation can be bypassed. You would learn about this much later in the course.
+
+*OUR FOCUS WILL BE ON CLIENT-SIDE HTML VALIDATION
+
+
+PRIOR KNOWLEDGE
+Let us recall what we already know. An HTML form collects information from users through elements such as inputs, labels and buttons.”   -->
+
+
+<!-- SAMPLE FORM -->
+  <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+ </head>
+ <body>
+    <h2>Student Registration</h2>
+
+   <form action=""#>
+
+    <!-- FULLNAME -->
+     <label for="fullName">Full Name</label>
+
+     <input
+     type="text"
+     id="fullName"
+     name="fullName"
+     placeholder="Enter your full name"
+     required
+     >
+
+     <!-- NOTE: PLACEHOLDER IS A PROTOTYPE/EXAPLE FORMAT OF WHAT IS EXPECTED OF THE USER TO ENTER IN AN INPUT FIELD. -->
+    <!-- EMAIL -->
+     <label for="email">Email</label>
+
+     <input
+     type="email"
+     id="email"
+     name="email"
+     placeholder="example@gmail.com"
+     required
+     >
+
+    <!-- Password -->
+     <label for="password">Password</label>
+
+     <input
+     type="password"
+     id="password"
+     name="password"
+     minlength="8"
+     maxlength="20"
+     required
+    >
+
+    <!-- Age -->
+     <label for="age">Age</label>
+
+     <input 
+     type="number"
+     id="age"
+     name="age"
+     min="13"
+     max="50"
+     required
+     >
+
+   <!-- Phone  -->
+<label for="phone">Telephone</label>
+<input type="tel" id="phone"  name="phone" pattern="[0-9]{11}" placeholder="08012345678" required>  
+
+<!-- BUTTON -->
+    <button type="submit">Submit</button>
+
+   </form>
+ </body>
+ </html>
+
+
+ <!-- PROBLEM -->
+  <!-- Can we spot the problem - -->
+  <!-- GATEKEEPER ANALOGY FOR FORM VALIDATION-->
+   <!-- A plain form without validation is like a beautiful house in a compound with an unmanned gate. Anyone or anything can access it. The potential intruders/risks include empty, incomplete, incorect, and/or unreliable data. -->
+
+   <!-- COMMON FORM VALIDATION -->
+<!-- REQUIRED ATTRIBUTE --> 
+ <!-- Prevents the submission of an empty input field. -->
+<!-- Example:
+     <input
+     type="password"
+     id="password"
+     name="password"
+     required
+    >  -->
+
+<!-- TYPE ATTRIBUTE -->
+<!-- It prevents the submission of inappropriate data type for an input field.
+Example:
+     <input
+     type="email"
+     id="email"
+     name="email"
+     placeholder="example@gmail.com"
+     required
+     > -->
+
+<!-- MIN and MAX ATRIBUTES-->
+<!-- Set the minimum and maximum numerical worth user can enter into an input field. -->
+<!-- Example:
+  <input 
+     type="number"
+     id="age"
+     name="age"
+     min="13"
+     max="50"
+     > -->
+
+
+<!-- MINLENGTH AND MAXLENGTH ATTRIBUTES -->
+<!-- Set minimum and maximum character count.
+Example: -->
+<!-- <input
+     type="password"
+     id="password"
+     name="password"
+     minlength="8"
+     maxlength="20"
+     required
+    > -->
+
+<!-- PATTERN ATTRIBUTE -->
+ <!-- The pattern attribute in HTML is used to specify a regular expression that an <input> element's value must match to be considered valid. It provides a built-in, client-side way to enforce specific data formats, such as phone numbers, postal codes, or strong passwords, before the form is submitted.  -->
+<!-- Example:  -->
+<!-- <label for="phone">Telephone</label>
+<input type="tel" id="phone"  name="phone" pattern="[0-9]{11}"> -->
+
+<br> <br> <br>
+
+<!-- HTML TABLES -->
+<!-- An HTML table is used to organise and display related information in **rows and columns**. Tables are suitable for information such as student results, timetables, price lists and attendance records. -->
+
+  <!-- Basic Table Elements
+| Element     | Meaning                                           |
+| ----------- | ------------------------------------------------- |
+| `<table>`   | Creates the entire table                          |
+| `<caption>` | Gives the table a title or description            |
+| `<thead>`   | Groups the header section of the table            |
+| `<tbody>`   | Groups the main data section of the table         |
+| `<tfoot>`   | Groups the footer or summary section of the table |
+| `<tr>`      | Creates a table row                               |
+| `<th>`      | Creates a heading cell, usually displayed in bold |
+| `<td>`      | Creates a standard data cell                      | -->
+
+<!-- EXAMPLE:  -->
+<table border="1">
+    <!-- table title -->
+<caption>Fullstack Student List</caption>
+
+<!-- table heading -->
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+</thead>
+
+<!-- body -->
+ <tbody>
+    <tr>
+        <td>Imran</td>
+        <td>10</td>
+    </tr>
+
+    <tr>
+        <td>Dami</td>
+        <td>5</td>
+    </tr>
+
+    <tr>
+        <td>Emma</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>Ore</td>
+        <td>6</td>
+    </tr>
+
+    <tr>
+        <td>IB</td>
+        <td>81</td>
+    </tr>
+
+    <tr>
+        <td>William</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>Ayo</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>Fawaz</td>
+        <td>11</td>
+    </tr>
+ </tbody>
+</table>
+
+<br> <br>
+
+  <!-- Useful HTML Table Attributes
+| Attribute | Used on          | Meaning                                        |
+| --------- | ---------------- | ---------------------------------------------- |
+| `border`  | `<table>`        | Adds a border around the table and its cells   |
+| `colspan` | `<th>` or `<td>` | Makes a cell extend across two or more columns |
+| `rowspan` | `<th>` or `<td>` | Makes a cell extend across two or more rows    | -->
+<br> <br>
+<!-- 1. BORDER is an attribute for the table tag. Without it, the table will not have a border. EXAMPLE -->
+<table border="1">
+    <caption>Menu</caption>
+
+    <thead>
+        <tr>
+            <th>Food</th>
+            <th>Price($)</th>
+        </tr>
+
+        <tbody>
+            <tr>
+               <td>Meat-pie</td> 
+               <td>3</td>
+            </tr>
+
+            <tr>
+               <td>Pizza</td> 
+               <td>5</td>
+            </tr>
+
+            <tr>
+               <td>Amala and Egusi</td> 
+               <td>10</td>
+            </tr>
+        </tbody>
+    </thead>
+</table>
+
+<br> <br>
+ <!--2. A. COLSPAN: It is an attribute for <th>` or `<td> tags. 
+    EXAMPLE:  -->
+    <!-- Version without colspan/rowspan -->
+<table border="1">
+<caption>Student Timetable</caption>
+
+<thead>
+    <tr>
+        <th>Day</th>
+        <th>Subject</th>
+        <th>Time</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Monday</td>
+        <td>Maths</td>
+        <td>1-2PM</td>
+    </tr>
+
+    <tr>
+        <td>Tuesday</td>
+        <td>English</td>
+        <td>2-3PM</td>
+    </tr>
+
+    <tr>
+        <td>Wednesday</td>
+        <td>History</td>
+        <td>3-4PM</td>
+    </tr>
+</tbody>
+</table>
+
+<!--2. B. version with colspan -->
+<table border="1">
+<caption>Student Timetable</caption>
+
+<thead>
+    <tr>
+        <th colspan="2">Day/Subject</th>
+        <th>Time</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Monday</td>
+        <td>Maths</td>
+        <td>1-2PM</td>
+    </tr>
+
+    <tr>
+        <td>Tuesday</td>
+        <td>English</td>
+        <td>2-3PM</td>
+    </tr>
+
+    <tr>
+        <td>Wednesday</td>
+        <td>History</td>
+        <td>3-4PM</td>
+    </tr>
+</tbody>
+</table>
+
+<!-- EXAMPLE -->
+<!-- 2. C. version for colspan -->
+ <table border="1">
+<caption>Student Interests</caption>
+
+<thead>
+    <tr>
+        <th>Name</th>
+        <th colspan="4">Interests</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Ore</td>
+        <td>Jumping</td>
+        <td>Drawing</td>
+        <td>Singing</td>
+        <td>Coding</td>
+    </tr>
+</tbody>
+ </table>
+
+ <!--3. ROWSPAN: EXAMPLE version with rowspan -->
+<table border="1">
+<caption>Student Timetable</caption>
+
+<thead>
+    <tr>
+        <th>Day</th>
+        <th>Subject</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Monday</td>
+        <td rowspan="2">Maths</td>
+    </tr>
+
+    <tr>
+        <td>Tuesday</td>
+    </tr>
+
+    <tr>
+        <td>Wednesday</td>
+        <td>History</td>
+    </tr>
+</tbody>
+</table>
+<br> <br>
+
+<!--4. A. ROWSPAN AND COLSPAN EXAMPLE: version with rowspan and colspan -->
+ <table border="1">
+<caption>Student Scores</caption>
+<thead>
+    <tr>
+        <th>Day</th>
+        <th>Subjects</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td rowspan="2">Monday</td>
+        <td>Chemistry</td> 
+    </tr>
+
+     <tr>
+        <td>Physics</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Tuesday</td>
+        <td>History</td>
+    </tr>
+
+    <tr>
+        <td>French</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="2">Overall Dami's Information</td>
+    </tr>
+</tfoot>
+ </table>
+<br> <br>
+
+ <!-- 4. B. EXAMPLE: second version with row and colspan -->
+   <table border="1">
+<caption>Student Scores</caption>
+<thead>
+    <!-- longer head -->
+         <tr>
+        <td colspan="2">Overall Dami's Information</td>
+         </tr>
+    
+         <!-- shorter heads below -->
+    <tr>
+        <th>Day</th>
+        <th>Subjects</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td rowspan="2">Monday</td>
+        <td>Chemistry</td> 
+    </tr>
+
+     <tr>
+        <td>Physics</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Tuesday</td>
+        <td>History</td>
+    </tr>
+
+    <tr>
+        <td>French</td>
+    </tr>
+</tbody>
+ </table>
+<br> <br>
+
+ <!-- 4. C. EXAMPLE: second version with row and colspan  -->
+    <table border="1">
+<caption>Student Scores</caption>
+<thead>
+    <tr>
+        <th>Day</th>
+        <th>Subjects</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td rowspan="2">Monday</td>
+        <td>Chemistry</td> 
+    </tr>
+
+     <tr>
+        <td>Physics</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Tuesday</td>
+        <td>History</td>
+    </tr>
+
+    <tr>
+        <td>French</td>
+    </tr>
+</tbody>
+
+<tfoot>
+        <tr>
+        <td colspan="2">Overall Dami's Information</td>
+         </tr>
+    </tfoot>
+ </table>
+ <br> <br>
+ <!-- 4. D. EXAMPLE  -->
+  <table border="1">
+    <caption>Amoke Oge Sales</caption>
+    <!-- longer heading -->
+    <thead>
+        <tr>
+            <th colspan="3">Sales for three branches in Lagos</th>
+        </tr>
+        <!-- shorter heqdings below -->
+    <tr>
+        <th>Shomolu</th>
+        <th>Yaba</th>
+        <th>Obalende</th>
+    </tr>
+    </thead> 
+    <!-- to be continued -->
+  </table>
+</body>
+</html>
+
+WEEKEND TASK: Class Project: Create a Mini Restaurant Website
+
+Create a mini restaurant website using HTML only.
+
+GUIDELINES
+PART ONE:
+a. Create one project folder named mini-restaurant. 
+b. In the folder, create three pages, including:
+index.html — Home page
+
+gallery.html — Food Gallery page
+
+reservation.html — Reservation Form page
+
+These make three webpages for your website.
+
+
+
+PART TWO: Create the Home Page
+In the home page, ensure that:
+-The restaurant’s name as the main heading.
+-A paragraph welcoming customers to the restaurant.
+-An About Us section containing at least two paragraphs about the restaurant.
+-An Our Services section containing an unordered list of at least five services.
+-A Restaurant Video (MP4) section containing a video of the restaurant or food.
+-Provide links to these three sections within the home page. To achieve this:
+-Give each section a unique div id.
+-Connect each same-page link (using anchor tag) to the correct id using #.
+-Feel free to use lorem to populate the sections.
+
+Sample ID => id="about". 
+Sample div => <div id="about">
+    <h2>About Us</h2>
+</div>
+
+And corresponding link - <a href="#about">About Us</a>
+-Provide links to Home and Food Gallery pages.
+
+-Challenge: Create a table showing the restaurant’s opening hours:
+            
+Period
+Day
+Opening Time
+Closing Time
+
+Weekdays
+ Monday
+ 9:00 a.m.
+ 10:00 p.m.
+ 
+
+ Tuesday
+ 9:00 a.m.
+ 10:00 p.m.
+ 
+
+ Wednesday
+ 9:00 a.m.
+ 10:00 p.m.
+ 
+
+ Thursday
+ 9:00 a.m.
+ 10:00 p.m.
+ 
+
+ Friday
+ 9:00 a.m.
+ 11:00 p.m.
+ 
+Weekend
+ Saturday
+ 10:00 a.m.
+ 11:00 p.m.
+ 
+ Sunday
+ 12:00 p.m.
+ 9:00 p.m.
+ 
+Add a note inside <tfoot>, such as:
+
+*Opening hours may change on public holidays.
+ 
+ -Use rowspan="5" to make Weekdays extend from Monday to Friday.
+ -Use rowspan="2" to make Weekend extend across Saturday and Sunday.
+ -Use colspan="4" to make the footer extend across all four columns.
+
+
+PART THREE: Create the Food Gallery Page
+
+A main heading displaying Food Gallery.
+Display at least six food or drink images.
+Provide links to Home and Reservation pages.
+
+
+
+PART FOUR: Create the Reservation Page
+1. In the page, create a table-reservation form containing:
+Full name — text input
+Email address — email input
+Phone number — telephone input
+Reservation date — date input
+Reservation time — time input
+Number of guests — number input
+Preferred seating area — dropdown list
+Dining option — radio buttons
+Special requests — textarea
+Submit button
+Reset button
+
+*Suggested Seating Options
+Indoor
+Outdoor
+VIP area
+
+*Suggested Dining Options
+Dine-in
+Takeaway
+
+2. Apply form validation
+3. Provide links to Home and Food Gallery pages.
+
